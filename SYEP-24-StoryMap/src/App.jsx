@@ -6,7 +6,7 @@ function App() {
       <div>
         <h1>this is a website
         </h1>
-        <p> This is a paragraph </p>
+        <p> Random nonsense </p>
         <input></input>
         <button>This is a button</button>
         <h2>groceries</h2>
