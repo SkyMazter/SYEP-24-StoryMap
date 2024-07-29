@@ -6,7 +6,7 @@ import AccordionHeader from "react-bootstrap/esm/AccordionHeader";
 function App(){
   return(
     <div>
-<h1>Air Quality</h1>
+      <h1>Air Quality</h1>
     <p></p>
     <h4>Details on Air Quality / Pollution </h4>
 <Accordion defaultActiveKey="0">
