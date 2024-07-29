@@ -9,6 +9,8 @@ import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 import img from "./assets/placeholder.png";
 
+import Footer from "./components/Footer.jsx";
+
 function App() {
   return (
     <div>
@@ -23,7 +25,7 @@ function App() {
             <Link>Home</Link>
           </Col>
           <Col className="justify-content-center d-flex" xs={3}>
-            <Link>StoryMap</Link>
+            <Link to={"/storymap"}>StoryMap</Link>
           </Col>
           <Col className="justify-content-center d-flex" xs={3}>
             <Link>SoundScapes</Link>
@@ -167,6 +169,7 @@ function App() {
         </Row>
       </Container>
 
+      <Footer/>
 
     </div>
   );
