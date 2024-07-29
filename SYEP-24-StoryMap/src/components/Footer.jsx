@@ -1,3 +1,4 @@
+import "../assets/css/Footer.css";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -6,7 +7,9 @@ import grey from "../assets/placeholder.png";
 
 const Footer = () => {
   return (
-    <Container>
+    <Container className="t-h-e-b-o-t-t-o-m">
+      <br></br>
+      <br></br>
       <Row>
         <Col>
           <h3>Learn More!</h3>
@@ -22,16 +25,19 @@ const Footer = () => {
             <Row>
               <Col>
                 {" "}
-                <h4>example@email.com</h4>
+                <h4>Email:</h4>
+                <p>example@email.com</p>
               </Col>
               <Col>
                 {" "}
-                <h4>Phone #</h4>
+                <h4>Phone:</h4>
+                <p>800-888-8888</p>
               </Col>
             </Row>
           </Container>
         </Col>
       </Row>
+      <br></br>
     </Container>
   );
 };
