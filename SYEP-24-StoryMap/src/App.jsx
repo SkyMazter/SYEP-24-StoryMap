@@ -33,7 +33,31 @@ function App() {
           </Col>
         </Row>
       </Container>
-
+      <div
+        className="bg-primary w-100 justify-content-center d-flex align-items-center"
+        style={{
+          position: "relative",
+        }}
+      >
+        <h3
+          style={{
+            position: "absolute",
+            zIndex: 3,
+          }}
+        >
+          {" "}
+          Subheader
+        </h3>
+        <Image
+          src={img}
+          style={{
+            height: "200px",
+            width: "100%",
+            position: "relative",
+            zIndex: 1,
+          }}
+        ></Image>
+      </div>
       <Container className="p-3">
         <Row>
           <Col>
@@ -90,26 +114,7 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <div
-        className="bg-primary w-100 justify-content-center d-flex align-items-center"
-        style={{
-          position: "relative",
-        }}
-      >
-        <h3 style={{
-            position: "absolute",
-            zIndex: 3,
-          }}> Subheader</h3>
-        <Image
-          src={img}
-          style={{
-            height: "200px",
-            width: "100%",
-            position: "relative",
-            zIndex: 1,
-          }}
-        ></Image>
-      </div>
+
       <Container className="p-3">
         <Row>
           <Col xs={12} sm={4} md={{ order: "last" }}>
@@ -161,6 +166,8 @@ function App() {
           </Col>
         </Row>
       </Container>
+
+
     </div>
   );
 }
