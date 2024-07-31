@@ -35,13 +35,14 @@ const Storymap = () => {
                 src={Box}
                 fluid
               />
-              <Figure.Caption>Background of The BQE</Figure.Caption>
+              <Figure.Caption className="judson-regular">Background of The BQE
+              </Figure.Caption>
               <Button variant="outline-success">More</Button>{' '}
             </Figure>
           </Col>
           <Col xs={12} md={8}>
             {" "}
-            <p>
+            <p className="judson-regular">
               {" "}
               The Brooklyn-Queens Expressway is an 11.7 mile long expressway, extending from the Brooklyn-Battery Tunnel to the 
               Grand Central Parkway in Queens. Designed and planned by Robert Moses, the construction
@@ -88,7 +89,7 @@ const Storymap = () => {
         </Carousel.Item>
 
         <Carousel.Caption>
-          <h2>The BQE</h2>
+          <h2 className="judson-regular">The BQE</h2>
         </Carousel.Caption>
       </Carousel>
 
@@ -101,24 +102,20 @@ const Storymap = () => {
         <Row>
           <Col xs={12} md={8}>
             {" "}
-            <p>
+            <p className="judson-regular">
               {" "}
-              The BQGreen project is one of the many movements whose goal is 
-              to restore health, peace, and safety back into our communities. The BQGreen’s 
+              The BQGreen project is one of the many projects whose goal is 
+              to restore health, peace, and safety back into our communities. The project's 
               plan is to cap a section of the BQE in Williamsburg and 
               construct several parks. This plan will help to increase the 
-              amount of green & open community spaces in the community 
+              amount of green & open community spaces in the community, 
               which will help the organization work towards their goals 
-              of delivering environmental justice to the city/community.
-              Will deliver environmental justice to the neighborhood’s 
-              longtime residents. Will promote improved health for current
+              of delivering environmental justice to the community.
+              The project will help promote improved health for current
              and future generations thanks to the trees and plants that
               will help absorb freeway noise and dirty air, and ease the
-             urban heat island effect. Is a high profile idea that would
-              make a significant difference citywide. It is on par with 
-              the High Line in terms of the impact that it will have. The 
-              park captures the imagination in a way that the other potential
-               park projects do not. Will become a great example of what can 
+             urban heat island effect. It's a high profile idea that would
+              make a significant difference citywide. Even more, the project is a great example of what can 
                be achieved when local communities, city, state and federal 
                governments and private companies work together toward a more 
                equitable and sustainable future. Deputy Borough President 
@@ -138,7 +135,7 @@ const Storymap = () => {
                 src={Box}
                 fluid
               />
-              <Figure.Caption>The BQGreen Project</Figure.Caption>
+              <Figure.Caption className="judson-regular">The BQGreen Project</Figure.Caption>
               <Button variant="outline-success">More</Button>{' '}
             </Figure>
           </Col>
