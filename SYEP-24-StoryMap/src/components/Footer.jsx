@@ -2,8 +2,6 @@ import "../styles/Footer.css";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
-import grey from "../assets/placeholder.png";
 
 const Footer = () => {
   return (
@@ -11,7 +9,7 @@ const Footer = () => {
       <br></br>
       <br></br>
       <Row>
-        <Col>
+        <Col className="">
           <h3>Learn More!</h3>
           <p>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim
@@ -28,7 +26,7 @@ const Footer = () => {
                 <h4>Email:</h4>
                 <p>example@email.com</p>
               </Col>
-              <Col>
+              <Col className="d-flex justify-content-center">
                 {" "}
                 <h4>Phone:</h4>
                 <p>800-888-8888</p>
