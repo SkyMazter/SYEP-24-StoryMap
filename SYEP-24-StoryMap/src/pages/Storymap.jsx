@@ -7,7 +7,9 @@ import Image from "react-bootstrap/Image";
 import Highway from "../assets/highwayimage.png";
 import Polarbear from "../assets/Polarbear.png";
 import smoke from "../assets/smoke.png";
-
+import scale from "../assets/scale.jpg";
+import airscale from "../assets/air scale.webp";
+import airquality from "../assets/air quality.webp";
 const Storymap = () => {
   return (
     <div>
@@ -26,10 +28,13 @@ const Storymap = () => {
 
              <div className="row">
              <div className="col">
+            <Image src={airscale} id="airscale"
+            ></Image>
              </div>
             <div className="col"><h5>Why is Air Quality Important?</h5>Humans and the environment need air and breathe a lot of it, people who spend time near busy roadways,and breathing in such harsh conditions of air will only lead to health problems and a poor environment. Harmful air quality -causes certain symptoms such as irritation to the eyes, nose, throat and even shortness of breath. The more you are exposed to such harsh environments the more health problems you can or will possibly face in your future. Poor air quality can slowly deteriorate your physical and mental health if exposed constantly to it.</div>
-           <div className="col">3 of 3</div>
-         <Footer />
+           <div className="col">
+            
+           </div>
       </div>
 
       <Container className="climate-change" fluid>
@@ -112,67 +117,7 @@ const Storymap = () => {
         </Row>
       </Container>
 
-      {/* <Container>
-        <Row>
-          <Col>
-            <h1>Climate Change</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            New York has seen the hottest summer on record this year. Hot
-            Summers are said to become the norm due to climate change. A Project
-            done by the Mayor's office for Climate and environmental Justice
-            says that by 2050 New York will see at least a month's worth of days
-            over 90 degrees. The rise in heat causes many health risks such as:
-            cramps, heat exhaustion, and heat stroke are said to increase with
-            the rise of temperatures.
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h2>Williamsburg & Climate Change</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            As the rise of climate change continues, so do the rising
-            temperatures. New York City has seen an all time high of heat in the
-            month of July, and this is not going away. As we continue to
-            unjustly take advantage of our resources, we will continue to
-            experience this horrific weather. The rise in temperature leads to a
-            rise in heat related injuries, resulting in anything from a mild
-            headache to a heatstroke. In South Williamsburg, people are even
-            more susceptible to these injuries due to the lack of green spaces
-            and shade in the neighborhood. Heat related deaths are at an all
-            time high around the world, and with the large amount of heat
-            related injuries, our emergency centers are overflowing with those
-            in need of help. Williamsburg, which has a large elderly population
-            is also at risk to the rise in climate change, as elderly people are
-            at high risk of having these injuries. 
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h3>BQE & Climate Change</h3>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            The BQE causes an influx of car pollution into the atmosphere, which
-            is in direct relation to climate change. The BQE is linked to high
-            rates of asthma due to the air pollution it causes.According to
-            World Economic Forum “Cities are full of structures and materials
-            that absorb heat and then radiate it back into the urban environment
-            - like roads, buildings, tarmac, and concrete. Human activities such
-            as driving and operating machinery also add to the heat generated in
-            cities.” The BQE has a direct link to the worsening weather patterns
-            we see within this city.
-          </Col>
-        </Row>
-      </Container>
-  <Image src={Blue}></Image> */}
-
+      
       <Footer />
     </div>
     );
