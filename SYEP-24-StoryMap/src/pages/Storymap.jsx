@@ -13,6 +13,10 @@ import Image from "react-bootstrap/Image";
 import Highway from "../assets/highwayimage.png";
 import Polarbear from "../assets/Polarbear.png";
 import smoke from "../assets/smoke.png";
+import BQGreenpic from "../assets/BQ-Green-pic-4.jpg";
+import BQEMap from "../assets/BQE Map-new-300pix.png.webp";
+import BQEWill from "../assets/IMG_7567.jpeg.webp";
+import Highway2 from "../assets/GettyImages_97272257.jpg";
 
 const Storymap = () => {
   return (
@@ -32,12 +36,12 @@ const Storymap = () => {
                 width={500}
                 height={100}
                 alt="171x180"
-                src={Box}
+                src={BQEMap}
                 fluid
               />
               <Figure.Caption className="judson-regular">Background of The BQE
               </Figure.Caption>
-              <Button variant="outline-success">More</Button>{' '}
+              <Button variant="link">More</Button>{' '}
             </Figure>
           </Col>
           <Col xs={12} md={8}>
@@ -72,25 +76,25 @@ const Storymap = () => {
       <Carousel>
         <Carousel.Item>
           <div className="w-100 d-flex justify-content-center align-items-center">
-          <Image fluid src={Box}></Image>
+          <Image fluid src={BQEWill}></Image>
           </div>
         </Carousel.Item>
-
-        <Carousel.Item>
-        <div className="w-100 d-flex justify-content-center align-items-center">
-          <Image fluid src={Box}></Image>
-          </div>
-        </Carousel.Item>
-
-        <Carousel.Item>
-        <div className="w-100 d-flex justify-content-center align-items-center">
-          <Image fluid src={Box}></Image>
-          </div>
-        </Carousel.Item>
-
         <Carousel.Caption>
-          <h2 className="judson-regular">The BQE</h2>
+          <h4 className="judson-regular">The BQE</h4>
+          <h3 className="judson-regular">Underneath the BQE in Williamsburg</h3>
         </Carousel.Caption>
+
+        <Carousel.Item>
+        <div className="w-100 d-flex justify-content-center align-items-center">
+          <Image fluid src={Box}></Image>
+          </div>
+        </Carousel.Item>
+      
+        <Carousel.Item>
+        <div className="w-80 d-flex justify-content-center align-items-center">
+          <Image fluid src={Highway2}></Image>
+          </div>
+        </Carousel.Item>
       </Carousel>
 
       <div>
@@ -132,11 +136,11 @@ const Storymap = () => {
                 width={500}
                 height={100}
                 alt="171x180"
-                src={Box}
+                src={BQGreenpic}
                 fluid
               />
               <Figure.Caption className="judson-regular">The BQGreen Project</Figure.Caption>
-              <Button variant="outline-success">More</Button>{' '}
+              <Button variant="link">More</Button>{' '}
             </Figure>
           </Col>
         </Row>
