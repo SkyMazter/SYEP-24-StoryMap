@@ -4,7 +4,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Blue from "../assets/Blue.jpg";
+import Highway from "../assets/highwayimage.png";
+import Polarbear from "../assets/Polarbear.png";
+import smoke from "../assets/smoke.png";
 
 const Storymap = () => {
   return (
@@ -14,13 +16,16 @@ const Storymap = () => {
       <Container className="climate-change" fluid>
         <Row>
           <Col
-            className="py-3"
+            className="py-3 "
             style={{ backgroundColor: "#00787A", color: "white" }}
             xs={12}
             md={4}
           >
-            <Image fluid src={Blue}></Image>
-            <h1 className="quando-regular">Climate Change</h1>
+            <div className="d-flex w-100 justify-content-center pb-3" >
+              <Image fluid src={Polarbear}></Image>
+            </div>
+            <h1 className="quando-regular">Climate Change 
+          </h1 >
             <p className="judson-regular">
               New York has seen the hottest summer on record this year. Hot
               Summers are said to become the norm due to climate change. A
@@ -54,7 +59,9 @@ const Storymap = () => {
               population is also at risk to the rise in climate change, as
               elderly people are at high risk of having these injuries. 
             </p>
-            <Image fluid src={Blue}></Image>
+            <div className="d-flex w-100 justify-content-center">
+            <Image fluid src={Highway}></Image>
+            </div>
           </Col>
           <Col
             className="py-3"
@@ -74,7 +81,14 @@ const Storymap = () => {
               to the heat generated in cities.” The BQE has a direct link to the
               worsening weather patterns we see within this city.
             </p>
-            <Image style={{ height:400, width:300, borderRadius: "85%" }} fluid src={Blue}></Image>
+            <div className="d-flex w-100 justify-content-center">
+            <Image
+              style={{ height: 400, width: 300, borderRadius: "85%" }}
+              className="py-3"
+              fluid
+              src={smoke}
+            ></Image>
+            </div>
           </Col>
         </Row>
       </Container>
