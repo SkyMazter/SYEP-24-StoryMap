@@ -1,9 +1,5 @@
-
-
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
-
 import Figure from 'react-bootstrap/Figure';
 import Box from '../assets/placeholder.png'
 import Carousel from 'react-bootstrap/Carousel';
@@ -22,7 +18,7 @@ const Storymap = () => {
   return (
     <div>
       <Link to={"/"}>Go Home</Link>
-      <h1>Reviving The BQE</h1>
+      <h1 className="quando-regular">Reviving The Brooklyn-Queens Expressway</h1 >
 
       <Container className="p-3">
         <Row>
