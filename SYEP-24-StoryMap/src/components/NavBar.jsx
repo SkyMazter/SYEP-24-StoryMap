@@ -1,4 +1,4 @@
-import "../assets/css/NavBar.css";
+import "../styles/NavBar.css";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <Container>
+    <Container fluid>
       <div className="b-o-x">
         <Row className="inner-box">
           <Col className="justify-content-center d-flex" xs={3}>

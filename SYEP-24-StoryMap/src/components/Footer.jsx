@@ -1,4 +1,4 @@
-import "../assets/css/Footer.css";
+import "../styles/Footer.css";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -7,7 +7,7 @@ import grey from "../assets/placeholder.png";
 
 const Footer = () => {
   return (
-    <Container className="t-h-e-b-o-t-t-o-m">
+    <Container className="t-h-e-b-o-t-t-o-m" fluid>
       <br></br>
       <br></br>
       <Row>
