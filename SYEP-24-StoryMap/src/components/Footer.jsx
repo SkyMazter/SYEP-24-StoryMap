@@ -1,14 +1,12 @@
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
-import grey from "../assets/placeholder.png";
 
 const Footer = () => {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col className="">
           <h3>Learn More!</h3>
           <p>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim
@@ -17,14 +15,13 @@ const Footer = () => {
             sollicitudin conubia.
           </p>
         </Col>
-        <Col>
-          <Container>
-            <Row>
-              <Col>
-                {" "}
+        <Col className="d-flex  align-items-center">
+          <Container className="">
+            <Row className="h-100">
+              <Col className="d-flex justify-content-center">
                 <h4>example@email.com</h4>
               </Col>
-              <Col>
+              <Col className="d-flex justify-content-center">
                 {" "}
                 <h4>Phone #</h4>
               </Col>
