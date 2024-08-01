@@ -17,12 +17,13 @@ import BQGreenpic from "../assets/BQ-Green-pic-4.jpg";
 import BQEMap from "../assets/BQE Map-new-300pix.png.webp";
 import BQEWill from "../assets/IMG_7567.jpeg.webp";
 import Highway2 from "../assets/GettyImages_97272257.jpg";
+import Promenade from "../assets/merlin_188857185_afdb8f87-3ffb-4d5c-a53d-5f194aa7fa0e-articleLarge.jpg.webp";
 
 const Storymap = () => {
   return (
     <div>
       <Link to={"/"}>Go Home</Link>
-      <h1 className="quando-regular">Reviving The Brooklyn-Queens Expressway</h1 >
+      <h1 className="quando-regular">Reviving The BQE</h1 >
 
       <Container className="p-3">
         <Row>
@@ -81,20 +82,23 @@ const Storymap = () => {
         </Carousel.Item>
         <Carousel.Caption>
           <h4 className="judson-regular">The BQE</h4>
-          <h3 className="judson-regular">Underneath the BQE in Williamsburg</h3>
         </Carousel.Caption>
-
         <Carousel.Item>
         <div className="w-100 d-flex justify-content-center align-items-center">
-          <Image fluid src={Box}></Image>
+          <Image fluid src={Promenade}></Image>
           </div>
         </Carousel.Item>
-      
+        <Carousel.Caption>
+          <h4 className="judson-regular">The BQE</h4>
+        </Carousel.Caption>
         <Carousel.Item>
         <div className="w-80 d-flex justify-content-center align-items-center">
           <Image fluid src={Highway2}></Image>
           </div>
         </Carousel.Item>
+        <Carousel.Caption>
+          <h4 className="judson-regular">The BQE</h4>
+        </Carousel.Caption>
       </Carousel>
 
       <div>
@@ -109,8 +113,8 @@ const Storymap = () => {
             <p className="judson-regular">
               {" "}
               The BQGreen project is one of the many projects whose goal is 
-              to restore health, peace, and safety back into our communities. The project's 
-              plan is to cap a section of the BQE in Williamsburg and 
+              to restore health, peace, and safety back into our communities. The 
+              project's plan is to cap a section of the BQE in Williamsburg and 
               construct several parks. This plan will help to increase the 
               amount of green & open community spaces in the community, 
               which will help the organization work towards their goals 
@@ -119,15 +123,16 @@ const Storymap = () => {
              and future generations thanks to the trees and plants that
               will help absorb freeway noise and dirty air, and ease the
              urban heat island effect. It's a high profile idea that would
-              make a significant difference citywide. Even more, the project is a great example of what can 
-               be achieved when local communities, city, state and federal 
-               governments and private companies work together toward a more 
-               equitable and sustainable future. Deputy Borough President 
-               Diana Reyna is the project’s leading public sponsor and its 
-               original champion. Other leading advocates of BQGreen include 
-               local Council Member Antonio Reynoso, Council Member Mark 
-               Levine, chair of the City Council’s Committee on Parks and 
-               Recreation and Susannah Drake, the project’s architect.
+              make a significant difference citywide. Even more, the project 
+              is a great example of what can 
+             be achieved when local communities, city, state and federal 
+             governments and private companies work together toward a more 
+             equitable and sustainable future. Deputy Borough President 
+             Diana Reyna is the project’s leading public sponsor and its 
+             original champion. Other leading advocates of BQGreen include 
+             local Council Member Antonio Reynoso, Council Member Mark 
+             Levine, chair of the City Council’s Committee on Parks and 
+             Recreation and Susannah Drake, the project’s architect.
             </p>
           </Col>
           <Col xs={12} md={4}>
