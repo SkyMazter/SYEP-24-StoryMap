@@ -1,12 +1,15 @@
+import "../styles/Footer.css";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 const Footer = () => {
   return (
-    <Container>
+    <Container className="footer" fluid>
+      <br></br>
+      <br></br>
       <Row>
-        <Col className="">
+        <Col>
           <h3>Learn More!</h3>
           <p>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim
@@ -15,20 +18,24 @@ const Footer = () => {
             sollicitudin conubia.
           </p>
         </Col>
-        <Col className="d-flex  align-items-center">
-          <Container className="">
-            <Row className="h-100">
-              <Col className="d-flex justify-content-center">
-                <h4>example@email.com</h4>
-              </Col>
-              <Col className="d-flex justify-content-center">
+        <Col>
+          <Container>
+            <Row>
+              <Col>
                 {" "}
-                <h4>Phone #</h4>
+                <h4>Email:</h4>
+                <p>example@email.com</p>
+              </Col>
+              <Col>
+                {" "}
+                <h4>Phone:</h4>
+                <p>800-888-8888</p>
               </Col>
             </Row>
           </Container>
         </Col>
       </Row>
+      <br></br>
     </Container>
   );
 };
