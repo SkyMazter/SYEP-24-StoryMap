@@ -26,7 +26,7 @@ const Footer = () => {
                 <h4>Email:</h4>
                 <p>example@email.com</p>
               </Col>
-              <Col className="d-flex justify-content-center">
+              <Col>
                 {" "}
                 <h4>Phone:</h4>
                 <p>800-888-8888</p>

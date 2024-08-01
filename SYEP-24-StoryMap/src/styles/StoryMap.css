@@ -3,6 +3,18 @@
     text-shadow: 20px #00787a;
 }
 
+#gone {
+    color: #94ebd8;
+}
+
 .MTASucks {
     background-color: #94ebd8;
+}
+
+.MTATime {
+    width: 660px;
+}
+
+.backdrop {
+    color: #00787a;
 }
