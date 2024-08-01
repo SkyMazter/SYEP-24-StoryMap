@@ -5,11 +5,11 @@ import Row from "react-bootstrap/Row";
 
 const Footer = () => {
   return (
-    <Container className="t-h-e-b-o-t-t-o-m" fluid>
+    <Container className="footer" fluid>
       <br></br>
       <br></br>
       <Row>
-        <Col className="">
+        <Col>
           <h3>Learn More!</h3>
           <p>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim
