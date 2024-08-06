@@ -22,20 +22,24 @@ import BQEMap from "../assets/BQE Map-new-300pix.png.webp";
 import BQEWill from "../assets/IMG_7567.jpeg.webp";
 import Highway2 from "../assets/GettyImages_97272257.jpg";
 import Promenade from "../assets/merlin_188857185_afdb8f87-3ffb-4d5c-a53d-5f194aa7fa0e-articleLarge.jpg.webp";
+import Layers from "../assets/bqe-brooklyn-heights-expressway-promenade-062022-sdevries-5.jpg.webp";
 
 const Storymap = () => {
   return (
     <div>
       <NavBar />
       <Link to={"/"}>Go Home</Link>
-      <h1 className="quando-regular">Reviving The BQE</h1>
+      <h1 className="quando-regular" style={{ backgroundColor: "#5CAEAF", color: "white" }}>Reviving The BQE</h1>
 
       <Container className="p-3">
         <Row>
-          <Col></Col>
+          <Col className="py-3"></Col>
         </Row>
         <Row>
-          <Col xs={12} md={4}>
+          <Col 
+          className="py-3"
+          xs={12}
+          md={4}>
             <Figure>
               <Figure.Image
                 width={500}
@@ -53,7 +57,8 @@ const Storymap = () => {
               </Button>{" "}
             </Figure>
           </Col>
-          <Col xs={12} md={8}>
+          <Col className="py-3"
+            xs={12} md={8}>
             {" "}
             <p className="judson-regular">
               {" "}
@@ -100,16 +105,16 @@ const Storymap = () => {
             <Image fluid src={BQEWill}></Image>
           </div>
           <Carousel.Caption>
-            <h4 className="judson-regular">The BQE</h4>
+            <h4 className="judson-regular">Under the BQE</h4>
           </Carousel.Caption>
         </Carousel.Item>
 
         <Carousel.Item>
           <div className=" d-flex justify-content-center align-items-center carousellImage">
-            <Image fluid src={Promenade}></Image>
+            <Image fluid src={Layers}></Image>
           </div>
           <Carousel.Caption>
-            <h4 className="judson-regular">The BQE</h4>
+            <h4 className="judson-regular">Layers of the BQE</h4>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -117,6 +122,9 @@ const Storymap = () => {
           <div className=" d-flex justify-content-center align-items-center carousellImage">
             <Image fluid src={Highway2}></Image>
           </div>
+          <Carousel.Caption>
+            <h4 className="judson-regular">Traffic on the BQE</h4>
+          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
 
@@ -152,7 +160,8 @@ const Storymap = () => {
                 Recreation and Susannah Drake, the project’s architect.
               </p>
             </Col>
-            <Col xs={12} md={4}>
+            <Col className="py-3"
+            xs={12} md={4}>
               <Figure>
                 <Figure.Image
                   width={500}
@@ -161,10 +170,13 @@ const Storymap = () => {
                   src={BQGreenpic}
                   fluid
                 />
-                <Figure.Caption className="judson-regular">
+                <Figure.Caption className="judson-regular" >
                   The BQGreen Project
                 </Figure.Caption>
-                <Button variant="link">More</Button>{" "}
+                <Button variant="link">
+                {" "}
+                <Link to={"https://bqgreen.org/en/the-park/"}>More</Link>
+              </Button>{" "}
               </Figure>
             </Col>
           </Row>
