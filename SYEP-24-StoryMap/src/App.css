@@ -44,3 +44,8 @@ width: 600px;
 height: 210px;
 width: 450px;
 }
+
+#map {
+  height: 37vh ;
+  width: 40vw ;
+}

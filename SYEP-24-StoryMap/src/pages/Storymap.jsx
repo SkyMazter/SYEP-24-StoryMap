@@ -16,7 +16,12 @@ import bqe from "../assets/bqe.webp";
 import NavBar from "../components/NavBar.jsx";
 import MTALogo from "../assets/mta-bus-logo.png";
 import WBT from "../assets/wbt.jpg";
-
+import { MapContainer } from "react-leaflet/MapContainer";
+import { TileLayer } from "react-leaflet/TileLayer";
+import { useMap } from "react-leaflet/hooks";
+import { Marker } from "react-leaflet";
+import { Popup } from "react-leaflet";
+import {Circle} from "react-leaflet"
 const Storymap = () => {
   return (
     <div>
@@ -85,9 +90,65 @@ const Storymap = () => {
             </p>
             <div className="col"></div>
           </div>
+
+          <Row>
+            <Col>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      How can we improve Air Quality?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Reduce contribution (Manage waste, move mindfully,
+                      conserve energy). Minimize your exposure (Monitor air,
+                      avoiding heavy traffic, time outdoor activity)
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Air quality scale Good 0-50 Moderate 50-100 Unhealthy
+                      101-150
+                    </div>
+                  </div>
+                </div>
+               </div>
+            </Col>
+          </Row>
         </Row>
       </Col>
-      <p className="my-2"></p>
+      <p className="my-3"></p>
       <Container
         className="Air Quality and the BQE"
         fluid
@@ -98,7 +159,7 @@ const Storymap = () => {
             <div class="container text-center">
               <div class="row">
                 <div class="col">
-                  <p className="my-2"></p>
+                  <p className="my-3"></p>
                   <h5 className="quando-regular">Air Quality and the BQE</h5>
                   <p className="judson-regular">
                     The BQE is a major point that significantly contributes to
@@ -114,12 +175,29 @@ const Storymap = () => {
                 </div>
                 <div class="col">
                   <p className="my-3"></p>
-                  <Image src={bqe} id="bqe"></Image>
+
+                  <MapContainer
+                    center={[40.71096, -73.95952]}
+                    zoom={13}
+                    scrollWheelZoom={false}
+                    id="map"
+                  >
+                    <TileLayer
+                      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={[40.71139, -73.95512]}>
+                      <Popup>
+                        Brooklyn-Queens Expressway <br />
+                      </Popup>
+                    </Marker>
+                    <Circle center={[40.71139, -73.95512]} radius={200} />
+                  </MapContainer>
                 </div>
                 <div class="col">
-                  <p className="my-2"></p>
+                  <p className="my-4"></p>
                   <h5 className="quando-regular">Air Quality Facts</h5>
-                  <table class="table">
+                  <table class="table" fluid>
                     <thead>
                       <tr>
                         <th
