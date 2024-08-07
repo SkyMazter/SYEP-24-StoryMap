@@ -26,3 +26,6 @@
     background-color: #94ebd8;
 }
 
+@media (width >= 768px) and (height >= 1024) or (orientation: portrait) {
+    /*stuck because of course I am*/
+}
