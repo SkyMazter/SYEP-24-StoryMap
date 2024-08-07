@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Storymap from "./pages/Storymap.jsx";
+import Soundscapes from "./pages/Soundscapes.jsx";
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: '/storymap',
     element: <Storymap/>
+  },
+  {
+    path: "/soundscapes",
+    element: <Soundscapes/>
   }
 ]);
 
