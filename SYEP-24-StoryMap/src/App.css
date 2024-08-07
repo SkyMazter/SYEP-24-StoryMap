@@ -35,6 +35,11 @@
     font-style: italic;
   }
   
+  .carousellImage{
+    width: 100vw;
+    height: 70vh;
+  }
+
 #airscale {
 height: 350px;
 width: 600px;
