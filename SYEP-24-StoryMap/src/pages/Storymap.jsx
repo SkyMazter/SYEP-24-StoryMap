@@ -1,10 +1,7 @@
 import "../styles/StoryMap.css";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import Figure from "react-bootstrap/Figure";
-import Box from "../assets/placeholder.png";
 import Carousel from "react-bootstrap/Carousel";
-import CarouselCaption from "react-bootstrap/esm/CarouselCaption";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Container from "react-bootstrap/Container";
@@ -21,25 +18,27 @@ import BQGreenpic from "../assets/BQ-Green-pic-4.jpg";
 import BQEMap from "../assets/BQE Map-new-300pix.png.webp";
 import BQEWill from "../assets/IMG_7567.jpeg.webp";
 import Highway2 from "../assets/GettyImages_97272257.jpg";
-import Promenade from "../assets/merlin_188857185_afdb8f87-3ffb-4d5c-a53d-5f194aa7fa0e-articleLarge.jpg.webp";
 import Layers from "../assets/bqe-brooklyn-heights-expressway-promenade-062022-sdevries-5.jpg.webp";
 
 const Storymap = () => {
   return (
     <div>
       <NavBar />
-      <p class="text-center"><h1 className="quando-regular" style={{ backgroundColor: "#5CAEAF", color: "white"}}>Reviving The BQE</h1> </p>
-      
+      <p class="text-center">
+        <h1
+          className="quando-regular"
+          style={{ backgroundColor: "#5CAEAF", color: "white" }}
+        >
+          Reviving The BQE
+        </h1>{" "}
+      </p>
 
       <Container className="p-3">
         <Row>
           <Col className="py-3"></Col>
         </Row>
         <Row>
-          <Col 
-          className="py-3"
-          xs={12}
-          md={4}>
+          <Col className="py-3" xs={12} md={4}>
             <Figure>
               <Figure.Image
                 width={500}
@@ -57,8 +56,7 @@ const Storymap = () => {
               </Button>{" "}
             </Figure>
           </Col>
-          <Col className="py-3"
-            xs={12} md={8}>
+          <Col className="py-3" xs={12} md={8}>
             {" "}
             <p className="judson-regular">
               {" "}
@@ -160,8 +158,7 @@ const Storymap = () => {
                 Recreation and Susannah Drake, the project’s architect.
               </p>
             </Col>
-            <Col className="py-3"
-            xs={12} md={4}>
+            <Col className="py-3" xs={12} md={4}>
               <Figure>
                 <Figure.Image
                   width={500}
@@ -170,13 +167,13 @@ const Storymap = () => {
                   src={BQGreenpic}
                   fluid
                 />
-                <Figure.Caption className="judson-regular" >
+                <Figure.Caption className="judson-regular">
                   The BQGreen Project
                 </Figure.Caption>
                 <Button variant="link">
-                {" "}
-                <Link to={"https://bqgreen.org/en/the-park/"}>More</Link>
-              </Button>{" "}
+                  {" "}
+                  <Link to={"https://bqgreen.org/en/the-park/"}>More</Link>
+                </Button>{" "}
               </Figure>
             </Col>
           </Row>
@@ -262,66 +259,6 @@ const Storymap = () => {
         </Row>
       </Container>
 
-      {/* <Container>
-        <Row>
-          <Col>
-            <h1>Climate Change</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            New York has seen the hottest summer on record this year. Hot
-            Summers are said to become the norm due to climate change. A Project
-            done by the Mayor's office for Climate and environmental Justice
-            says that by 2050 New York will see at least a month's worth of days
-            over 90 degrees. The rise in heat causes many health risks such as:
-            cramps, heat exhaustion, and heat stroke are said to increase with
-            the rise of temperatures.
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h2>Williamsburg & Climate Change</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            As the rise of climate change continues, so do the rising
-            temperatures. New York City has seen an all time high of heat in the
-            month of July, and this is not going away. As we continue to
-            unjustly take advantage of our resources, we will continue to
-            experience this horrific weather. The rise in temperature leads to a
-            rise in heat related injuries, resulting in anything from a mild
-            headache to a heatstroke. In South Williamsburg, people are even
-            more susceptible to these injuries due to the lack of green spaces
-            and shade in the neighborhood. Heat related deaths are at an all
-            time high around the world, and with the large amount of heat
-            related injuries, our emergency centers are overflowing with those
-            in need of help. Williamsburg, which has a large elderly population
-            is also at risk to the rise in climate change, as elderly people are
-            at high risk of having these injuries. 
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h3>BQE & Climate Change</h3>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            The BQE causes an influx of car pollution into the atmosphere, which
-            is in direct relation to climate change. The BQE is linked to high
-            rates of asthma due to the air pollution it causes.According to
-            World Economic Forum “Cities are full of structures and materials
-            that absorb heat and then radiate it back into the urban environment
-            - like roads, buildings, tarmac, and concrete. Human activities such
-            as driving and operating machinery also add to the heat generated in
-            cities.” The BQE has a direct link to the worsening weather patterns
-            we see within this city.
-          </Col>
-        </Row>
-      </Container>
-  <Image src={Blue}></Image> */}
       <div className="MTASucks">
         <h3 id="gone">a</h3>
         <h1 id="yes" className="justify-content-center d-flex quando-regular">
