@@ -48,7 +48,7 @@ function App() {
           }}
         >
           {" "}
-          Subheader
+         Subheader
         </h3>
         <Image
           src={img}
