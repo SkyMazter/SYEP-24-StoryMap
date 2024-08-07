@@ -109,7 +109,6 @@ function App() {
               elit. Dignissim pulvinar venenatis habitasse per tellus sociosqu
               eros rhoncus adipiscing. Elit dignissim imperdiet ac massa
               facilisi quam sollicitudin conubia. Cubilia efficitur litora magna
-              amet; magnis cras integer. Est eget commodo feugiat quisque
               facilisi dis lorem proin. Tellus sagittis lobortis risus fusce
               ridiculus penatibus volutpat integer.
             </p>{" "}
