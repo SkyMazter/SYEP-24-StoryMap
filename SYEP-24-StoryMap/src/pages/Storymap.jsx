@@ -28,8 +28,8 @@ const Storymap = () => {
   return (
     <div>
       <NavBar />
-      <Link to={"/"}>Go Home</Link>
-      <h1 className="quando-regular" style={{ backgroundColor: "#5CAEAF", color: "white" }}>Reviving The BQE</h1>
+      <p class="text-center"><h1 className="quando-regular" style={{ backgroundColor: "#5CAEAF", color: "white"}}>Reviving The BQE</h1> </p>
+      
 
       <Container className="p-3">
         <Row>
