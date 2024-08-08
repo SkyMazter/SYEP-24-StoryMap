@@ -19,7 +19,7 @@ import { MapContainer } from "react-leaflet/MapContainer";
 import { TileLayer } from "react-leaflet/TileLayer";
 import { Marker } from "react-leaflet";
 import { Popup } from "react-leaflet";
-import {Circle} from "react-leaflet"
+import { Circle } from "react-leaflet";
 import BQGreenpic from "../assets/BQ-Green-pic-4.jpg";
 import BQEMap from "../assets/BQE Map-new-300pix.png.webp";
 import BQEWill from "../assets/IMG_7567.jpeg.webp";
@@ -94,64 +94,95 @@ const Storymap = () => {
             </p>
             <div className="col"></div>
           </div>
-
-          <Row>
-            <Col>
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      How can we improve Air Quality?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Reduce contribution (Manage waste, move mindfully,
-                      conserve energy). Minimize your exposure (Monitor air,
-                      avoiding heavy traffic, time outdoor activity)
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Air quality scale Good 0-50 Moderate 50-100 Unhealthy
-                      101-150
-                    </div>
-                  </div>
-                </div>
-               </div>
-            </Col>
-          </Row>
         </Row>
       </Col>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2
+            class="accordion-header"
+            className="quando-regular"
+            style={{
+              color: "black",
+              textAlign: "center",
+            }}
+          >
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              How can we improve Air Quality?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div
+              class="accordion-body"
+              className="judson-regular"
+              style={{
+                backgroundColor: "#d4e4fe",
+                textAlign: "center",
+              }}
+            >
+              Reduce contribution (Manage waste, Move mindfully, Conserve
+              energy). Minimize your exposure (Monitor air, Avoid heavy traffic,
+              Time outdoor activity)
+              <p className="my-2"></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2
+            class="accordion-header"
+            className="quando-regular"
+            style={{
+              backgroundColor: "#d4e4fe",
+              textAlign: "center",
+            }}
+          >
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Air Quality Scale
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div
+              class="accordion-body"
+              className="judson-regular"
+              style={{
+                backgroundColor: "#d4e4fe",
+                textAlign: "center",
+              }}
+            >
+              Our air quality scale also known as the AQI runs by numbers. The
+              higher the number the higher the health scare and concern will be.
+              The AQI goes from 0-300 and more. The air quality you should want
+              to breathe and the quality we all deserve runs from 0-100 which is
+              Good to Moderate. Anything beyond 125 will be extremely unhealthy
+              to most individuals.
+              <p className="my-2"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <p className="my-3"></p>
       <Container
         className="Air Quality and the BQE"
@@ -167,13 +198,13 @@ const Storymap = () => {
                   <h5 className="quando-regular">Air Quality and the BQE</h5>
                   <p className="judson-regular">
                     The BQE is a major point that significantly contributes to
-                    Air quality within the air and the neighborhood. The large
-                    amounts of cars and trucks set off toxic fumes and harsh
-                    conditions and such are responsible for severe respiratory
-                    issues. This air is not suitable for humans to breathe and
-                    could easily harm your health. Williamsburg is a major
-                    neighborhood that demonstrates how harmful the BQE is to air
-                    quality due to small spaces and tons of car and truck
+                    poor Air quality within the air and the neighborhood. The
+                    large amounts of cars and trucks set off toxic fumes and
+                    harsh conditions and such are responsible for severe
+                    respiratory issues. This air is not suitable for humans to
+                    breathe and could easily harm your health. Williamsburg is a
+                    major neighborhood that demonstrates how harmful the BQE is
+                    to air quality due to small spaces and tons of car and truck
                     activity.{" "}
                   </p>
                 </div>
@@ -195,7 +226,7 @@ const Storymap = () => {
                         Brooklyn-Queens Expressway <br />
                       </Popup>
                     </Marker>
-                    <Circle center={[40.71139, -73.95512]} radius={200} />
+                    <Circle center={[40.71139, -73.95512]} radius={350} />
                   </MapContainer>
                 </div>
                 <div class="col">
@@ -246,6 +277,7 @@ const Storymap = () => {
           </Row>
         </Col>
       </Container>
+
       <p class="text-center">
         <h1
           className="quando-regular"
@@ -481,7 +513,6 @@ const Storymap = () => {
         </Row>
       </Container>
 
-    
       <div className="MTASucks">
         <h3 id="gone">a</h3>
         <h1 id="yes" className="justify-content-center d-flex quando-regular">
