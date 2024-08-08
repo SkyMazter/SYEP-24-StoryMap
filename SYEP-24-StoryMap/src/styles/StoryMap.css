@@ -13,6 +13,7 @@
 
 .MTATime {
     width: 600px;
+    padding: 5%;
 }
 
 .backdrop {
@@ -26,6 +27,8 @@
     background-color: #94ebd8;
 }
 
-@media (width >= 768px) and (height >= 1024) or (orientation: portrait) {
-    /*stuck because of course I am*/
+@media screen and (width <= 1024px) {
+    .MTAimageguys {
+        display: none;
+    }
 }

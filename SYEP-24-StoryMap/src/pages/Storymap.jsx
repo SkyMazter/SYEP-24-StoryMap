@@ -327,7 +327,7 @@ const Storymap = () => {
                 </p>
               </div>
             </Col>
-            <Col>
+            <Col className="MTAimageguys">
               <Image className="MTATime" src={MTALogo}></Image>
               <Image className="MTATime" src={WBT}></Image>
             </Col>
@@ -335,7 +335,6 @@ const Storymap = () => {
         </Container>
       </div>
       <div className="paddingBR"></div>
-
       <Footer />
     </div>
   );
