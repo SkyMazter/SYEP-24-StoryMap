@@ -168,9 +168,6 @@ function App() {
     //       </Col>
     //     </Row>
     //   </Container>
-
-    //   <Footer/>
-
     // </div>
     <Container fluid>
       <Row>
