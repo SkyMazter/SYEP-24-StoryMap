@@ -11,44 +11,120 @@ import Image from "react-bootstrap/Image";
 import NavBar from "../components/NavBar.jsx";
 import Box from "../assets/square-xxl.png";
 import EP from "../assets/ITH3csmT_400x400.jpg";
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 const Soundscapes = () => {
     return (
         <div>
             <NavBar />
+      <Container className="p-3">
+        <Row>
+          <Col className="py-3" xs={12} md={8}>
+            {" "}
             <p class="text-center">
         <h1
           className="judson-regular"
-          style={{ backgroundColor: "#5CAEAF", color: "white" }}
         >
           Southside Soundscapes
         </h1>{" "}
       </p>
-      <Container className="p-3">
-        <Row>
-          <Col className="py-3"></Col>
-        </Row>
-        <Row>
-          <Col className="py-3" xs={12} md={4}>
-            <Figure>
-              <Figure.Image
-                width={500}
-                height={100}
-                alt="171x180"
-                src={EP}
-                fluid
-              />
-            </Figure>
-          </Col>
-          <Col className="py-3" xs={12} md={8}>
-            {" "}
             <p className="judson-regular">
               {" "}
-              The Brooklyn-Queens Expressway 
+              The Voices of the Community 
             </p>
           </Col>
         </Row>
       </Container>
+      
+      <CardGroup>
+      <Card>
+        <Card.Img variant="top" src="Box" />
+        <Card.Body>
+          <Card.Title>Audio #1</Card.Title>
+          <Card.Text>
+          This card has supporting text below as a natural lead-in to
+          additional content.
+          </Card.Text>
+          <Button variant="link">Listen</Button>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">July 19th • 3 minutes</small>
+        </Card.Footer>
+      </Card>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Audio #2</Card.Title>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+          <Button variant="link">Listen</Button>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">July 19th • 3 minutes</small>
+        </Card.Footer>
+      </Card>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Audio #3</Card.Title>
+          <Card.Text>
+          This card has supporting text below as a natural lead-in to
+          additional content.
+          </Card.Text>
+          <Button variant="link">Listen</Button>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">July 19th • 3 minutes</small>
+        </Card.Footer>
+      </Card>
+    </CardGroup>
+    <CardGroup>
+      <Card>
+        <Card.Img variant="top" src="Box" />
+        <Card.Body>
+          <Card.Title>Audio #4</Card.Title>
+          <Card.Text>
+          This card has supporting text below as a natural lead-in to
+          additional content.
+          </Card.Text>
+          <Button variant="link">Listen</Button>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">July 19th • 3 minutes</small>
+        </Card.Footer>
+      </Card>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Audio #5</Card.Title>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+          <Button variant="link">Listen</Button>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">July 19th • 3 minutes</small>
+        </Card.Footer>
+      </Card>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Audio #6</Card.Title>
+          <Card.Text>
+          This card has supporting text below as a natural lead-in to
+          additional content.
+          </Card.Text>
+          <Button variant="link">Listen</Button>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">July 19th • 3 minutes</small>
+        </Card.Footer>
+      </Card>
+    </CardGroup>
             <Footer />
         </div>
     )
