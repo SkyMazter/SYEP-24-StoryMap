@@ -16,7 +16,8 @@ const router = createBrowserRouter([
   {
     path: '/storymap',
     element: <Storymap/>
-  }
+  },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
