@@ -28,18 +28,25 @@ const Soundscapes = () => {
         >
           Southside Soundscapes
         </h1>{" "}
+        </p>
+            <p class="text-center">
+        <h3 className="judson-regular">
+          The Voices of the Community/Los Sures
+        </h3>{" "}
       </p>
-            <p className="judson-regular">
-              {" "}
-              The Voices of the Community 
-            </p>
+            <p class="text-center" className="judson-regular">
+        Southside Soundscapes is a collection of audio recordings, recorded by a group of
+         youth organizers at El Puente around the neighborhood of Los Sures. AS youth 
+         organizers, a huge part of our job at El Puente is outreaching throughout the 
+         community.
+      </p>
           </Col>
         </Row>
       </Container>
       
       <CardGroup>
       <Card>
-        <Card.Img variant="top" src="Box" />
+        <Card.Img variant="top" src={Box} />
         <Card.Body>
           <Card.Title>Audio #1</Card.Title>
           <Card.Text>
@@ -53,7 +60,7 @@ const Soundscapes = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={Box}/>
         <Card.Body>
           <Card.Title>Audio #2</Card.Title>
           <Card.Text>
@@ -67,7 +74,7 @@ const Soundscapes = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={Box} />
         <Card.Body>
           <Card.Title>Audio #3</Card.Title>
           <Card.Text>
@@ -83,7 +90,7 @@ const Soundscapes = () => {
     </CardGroup>
     <CardGroup>
       <Card>
-        <Card.Img variant="top" src="Box" />
+        <Card.Img variant="top" src={Box} />
         <Card.Body>
           <Card.Title>Audio #4</Card.Title>
           <Card.Text>
@@ -97,26 +104,12 @@ const Soundscapes = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={Box} />
         <Card.Body>
           <Card.Title>Audio #5</Card.Title>
           <Card.Text>
             This card has supporting text below as a natural lead-in to
             additional content.{' '}
-          </Card.Text>
-          <Button variant="link">Listen</Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">July 19th • 3 minutes</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Audio #6</Card.Title>
-          <Card.Text>
-          This card has supporting text below as a natural lead-in to
-          additional content.
           </Card.Text>
           <Button variant="link">Listen</Button>
         </Card.Body>
