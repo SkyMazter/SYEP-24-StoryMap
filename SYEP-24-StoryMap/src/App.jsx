@@ -20,10 +20,10 @@ import NavBar from "./components/NavBar.jsx";
 function App() {
   return (
     <div>
-      <Container fluid>
+      <Container fluid >
         <Row>
           <Col md={3}>
-            <Image fluid src={bridge}></Image>
+            <Image fluid src= {bridge}></Image>
           </Col>
           <Col md={9}>
             <Container fluid>
@@ -85,9 +85,9 @@ function App() {
               </Row>
               <Row>
                 <Col>
-                  <Image fluid src={circleart} className="w-50"></Image>
+                  <Image fluid src={circleart} className="w-50 justify-content-center"></Image>
                 </Col>
-                <Col>
+                <Col className="quando-regular text-center justify-content-center">
                   {" "}
                   <p>
                     Gravida phasellus vulputate lobortis efficitur tempus lectus
@@ -100,7 +100,7 @@ function App() {
                     nisi montes cursus aenean. Semper convallis parturient
                     lobortis; convallis et aliquet. Elementum parturient blandit
                     porttitor magnis amet. Torquent pharetra a adipiscing
-                    pharetra bibendum.P
+                    pharetra bibendum.
                   </p>
                 </Col>
               </Row>
