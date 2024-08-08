@@ -54,3 +54,8 @@ width: 450px;
   height: 37vh ;
   width: 40vw ;
 }
+
+#placeholder {
+  height: 50px ;
+  width: 50px;
+}
