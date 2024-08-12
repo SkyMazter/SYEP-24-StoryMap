@@ -11,9 +11,15 @@ import Image from "react-bootstrap/Image";
 import Highway from "../assets/highwayimage.png";
 import Polarbear from "../assets/Polarbear.png";
 import smoke from "../assets/smoke.png";
+import airscale from "../assets/air scale.webp";
 import NavBar from "../components/NavBar.jsx";
 import MTALogo from "../assets/mta-bus-logo.png";
 import WBT from "../assets/wbt.jpg";
+import { MapContainer } from "react-leaflet/MapContainer";
+import { TileLayer } from "react-leaflet/TileLayer";
+import { Marker } from "react-leaflet";
+import { Popup } from "react-leaflet";
+import { Circle } from "react-leaflet";
 import BQGreenpic from "../assets/BQ-Green-pic-4.jpg";
 import BQEMap from "../assets/BQE Map-new-300pix.png.webp";
 import BQEWill from "../assets/IMG_7567.jpeg.webp";
@@ -24,6 +30,254 @@ const Storymap = () => {
   return (
     <div>
       <NavBar />
+      <p className="justify-content-center d-flex"></p>
+      <h3
+        className="quando-regular"
+        style={{
+          backgroundColor: "#d4e4fe",
+          color: "black",
+          textAlign: "center",
+        }}
+      >
+        Air Quality
+      </h3>
+      <p className="my-4"></p>
+      <Container fluid style={{ backgroundColor: "#d4e4fe", color: "black" }}>
+        <h5 className="quando-regular">
+          {" "}
+          What is Air Quality? Who does it affect?
+        </h5>
+        <p className="judson-regular">
+          Air quality is the degree to which the air is suitable and clean for
+          humans, animals and the environment. Air that is free from toxic and
+          harmful substances. Air quality affects everyone no matter how far or
+          close you are near a pollution hotspot. Some groups are more sensitive
+          to Air Quality such as Older adults, children and infants, people who
+          spend lots of time near busy roadways and people with pre-existing
+          conditions.{" "}
+        </p>
+      </Container>
+      <Col>
+        <Row>
+          <p className="my-2"></p>
+          <Image src={airscale} id="airscale"></Image>
+          <div className="col">
+            <p className="my-3"></p>
+            <h5 className="quando-regular" style={{ color: "black" }}>
+              Why is Air Quality Important?
+            </h5>
+            <p className="judson-regular" style={{ color: "black" }}>
+              Humans and the environment need air and breathe a lot of it,
+              people who spend time near busy roadways, and breathing in such
+              harsh conditions of air will only lead to health problems and a
+              poor environment. Harmful air quality causes certain symptoms such
+              as irritation to the eyes, nose, throat and even shortness of
+              breath. The more you are exposed to such harsh environments the
+              more health problems you can or will possibly face in your future.
+              Poor air quality can slowly deteriorate your physical and mental
+              health if exposed constantly to it.
+            </p>
+            <h5 className="quando-regular" style={{ color: "black" }}>
+              Air Quality in Williamsburg
+            </h5>
+            <p className="judson-regular" style={{ color: "black" }}>
+              Williamsburg, NY Air Quality forecast has been extremely poor and
+              has a consistent air quality of around the 60s which is moderate
+              for breathing and is significantly lower than good air which is
+              anything above 50. Currently the community of Williamsburg has
+              been taking in decent levels of nitrogen dioxide which then harms
+              them and increases issues such as respiratory problems and more.
+              People of williamsburg are most likely taking in as much nitrogen
+              dioxide than oxygen. Sensitive groups should also reduce outdoor
+              exercise, wearing a mask, running air purifiers and closing
+              windows.
+            </p>
+            <div className="col"></div>
+          </div>
+        </Row>
+      </Col>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2
+            class="accordion-header"
+            className="quando-regular"
+            style={{
+              color: "black",
+              textAlign: "center",
+            }}
+          >
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              How can we improve Air Quality?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div
+              class="accordion-body"
+              className="judson-regular"
+              style={{
+                backgroundColor: "#d4e4fe",
+                textAlign: "center",
+              }}
+            >
+              Reduce contribution (Manage waste, Move mindfully, Conserve
+              energy). Minimize your exposure (Monitor air, Avoid heavy traffic,
+              Time outdoor activity)
+              <p className="my-2"></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2
+            class="accordion-header"
+            className="quando-regular"
+            style={{
+              backgroundColor: "#d4e4fe",
+              textAlign: "center",
+            }}
+          >
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Air Quality Scale
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div
+              class="accordion-body"
+              className="judson-regular"
+              style={{
+                backgroundColor: "#d4e4fe",
+                textAlign: "center",
+              }}
+            >
+              Our air quality scale also known as the AQI runs by numbers. The
+              higher the number the higher the health scare and concern will be.
+              The AQI goes from 0-300 and more. The air quality you should want
+              to breathe and the quality we all deserve runs from 0-100 which is
+              Good to Moderate. Anything beyond 125 will be extremely unhealthy
+              to most individuals.
+              <p className="my-2"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p className="my-3"></p>
+      <Container
+        className="Air Quality and the BQE"
+        fluid
+        style={{ backgroundColor: "#d4e4fe", color: "black" }}
+      >
+        <Col>
+          <Row>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <p className="my-3"></p>
+                  <h5 className="quando-regular">Air Quality and the BQE</h5>
+                  <p className="judson-regular">
+                    The BQE is a major point that significantly contributes to
+                    poor Air quality within the air and the neighborhood. The
+                    large amounts of cars and trucks set off toxic fumes and
+                    harsh conditions and such are responsible for severe
+                    respiratory issues. This air is not suitable for humans to
+                    breathe and could easily harm your health. Williamsburg is a
+                    major neighborhood that demonstrates how harmful the BQE is
+                    to air quality due to small spaces and tons of car and truck
+                    activity.{" "}
+                  </p>
+                </div>
+                <div class="col">
+                  <p className="my-3"></p>
+
+                  <MapContainer
+                    center={[40.71096, -73.95952]}
+                    zoom={13}
+                    scrollWheelZoom={false}
+                    id="map"
+                  >
+                    <TileLayer
+                      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={[40.71139, -73.95512]}>
+                      <Popup>
+                        Brooklyn-Queens Expressway <br />
+                      </Popup>
+                    </Marker>
+                    <Circle center={[40.71139, -73.95512]} radius={350} />
+                  </MapContainer>
+                </div>
+                <div class="col">
+                  <p className="my-4"></p>
+                  <h5 className="quando-regular">Air Quality Facts</h5>
+                  <table class="table" fluid>
+                    <thead>
+                      <tr>
+                        <th
+                          scope="col"
+                          className="judson-regular"
+                          style={{ color: "black" }}
+                        >
+                          {" "}
+                          - Less than 1% of global land area has safe pollution
+                          levels
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th
+                          scope="row"
+                          className="judson-regular"
+                          style={{ color: "black" }}
+                        >
+                          {" "}
+                          - At least 1 in 10 people die from air
+                          pollution-related reasons
+                        </th>
+                      </tr>
+                      <tr>
+                        <th
+                          scope="row"
+                          className="judson-regular"
+                          style={{ color: "black" }}
+                        >
+                          {" "}
+                          - Air pollution is a great threat to life expectancy
+                          than smoking, HIV or war
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </Row>
+        </Col>
+      </Container>
+
       <p class="text-center">
         <h1
           className="quando-regular"
