@@ -3,7 +3,6 @@ import "./App.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Figure from "react-bootstrap/Figure";
 import Image from "react-bootstrap/Image";
 import bridge from "./assets/bridge.png";
 import art from "./assets/art.png";
@@ -11,7 +10,7 @@ import water from "./assets/water.png";
 import microphone from "./assets/microphone.png";
 import circleart from "./assets/circleart.png";
 
-import { Link } from "react-router-dom";
+
 import img from "./assets/placeholder.png";
 
 import Footer from "./components/Footer.jsx";
