@@ -14,6 +14,8 @@ import EP from "../assets/ITH3csmT_400x400.jpg";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Miguel from "../assets/Miguel Hernandez and Gabriele Blazyte_3.jpeg";
+import Joseph from "../assets/Joseph Matonis and Branden Henderson_1.jpg";
+import Frances from "../assets/Copy of Frances_Britney_4.jpg";
 
 const Soundscapes = () => {
     return (
