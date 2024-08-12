@@ -1,18 +1,4 @@
-/* p {
-    color: black;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typewriter 5s steps(44) 1s 1 normal both;
-}
-
-@keyframes typewriter {
-    from {
-        width: 0%;
-    }
-    to{
-        width: 100%;
-    }
-} */.quando-regular {
+.quando-regular {
   font-family: "Quando", serif;
   font-weight: 400;
   font-style: normal;
