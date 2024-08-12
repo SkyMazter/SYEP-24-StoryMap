@@ -55,7 +55,13 @@ width: 450px;
   width: 40vw ;
 }
 
-#placeholder {
-  height: 50px ;
-  width: 50px;
+.placeholder {
+  width:100%;
+}
+.placeholder2{
+  width: 50%;
+}
+
+.muralistaimage{
+  width: 100%;
 }
