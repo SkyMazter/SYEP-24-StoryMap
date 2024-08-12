@@ -3,12 +3,8 @@
     text-shadow: 20px #00787a;
 }
 
-.gone {
-    color: #94ebd8;
-}
-
 .MTASucks {
-    background-color: #94ebd8;
+    background-color: #73b7a8;
 }
 
 .MTATime {
@@ -24,7 +20,7 @@
 
 .paddingBR {
     padding: 20px;
-    background-color: #94ebd8;
+    background-color: #73b7a8;
 }
 
 @media screen and (width <= 1024px) {
