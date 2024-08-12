@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <Container fluid>
-      <Row className="bg-secondary">
+      <Row id="navbar">
         <Col className="justify-content-center d-flex" xs={3}>
           <Link to={"/"}>Home</Link>
         </Col>

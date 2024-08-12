@@ -514,16 +514,16 @@ const Storymap = () => {
       </Container>
 
       <div className="MTASucks">
-        <h3 id="gone">a</h3>
+        <div className="paddingBR"></div>
         <h1 id="yes" className="justify-content-center d-flex quando-regular">
           Transit and it's... quirks
         </h1>
         <br></br>
         <Container>
           <Row>
-            <Col>
-              <div className="backdrop">
-                <p className="justify-content-center d-flex judson-regular">
+            <Col className="backdrop">
+              <div>
+                <p className="justify-content-center d-flex judson-regular p-3">
                   The Metropolitan Tranist Authority, other wise known as the
                   MTA, is inconsistent, at best. With half working busses, train
                   routes that get thrown out the window at the most inconvinent
@@ -568,27 +568,27 @@ const Storymap = () => {
                   Yorker, we're used to our messy, $2.90 (I still can't believe
                   it's $2.90) fared form of transport that gets us almost
                   everywhere in NYC. Almost. RIP the people in Staten Island. We
-                  still want it fixed, though.Don't take this as me saying it's
-                  fine, it really isn't but, I'd be remiss to say that I, along
-                  with many other New Yorkers haven't grown complaisant. Just
-                  because we're used to it, doesn't mean we like it. The fact
-                  that I had to wait and hour and 20 minutes for the B39, a bus
-                  that goes 3 whole stops in a ride that took a total of 5
-                  minutes and I could have walked in like 30 minutes if the Maps
-                  app didn't consistantly lure me into a false sense of
-                  security, is a testiment to my disdain for the MTA. Fricken
-                  hate the B39.
+                  still want it fixed, though. Don't take this as me saying it's
+                  fine; it really isn't. However, I'd be remiss to say that I,
+                  along with many other New Yorkers, haven't grown complaisant.
+                  Just because we're used to the garbage service known as the
+                  MTA doesn't mean we like it. The fact that I had to wait an
+                  hour and 20 minutes for the B39, a bus that goes 3 whole stops
+                  in a ride that took a total of 5 minutes and I could have
+                  walked in like 30 minutes if the Maps app didn't consistantly
+                  lure me into a false sense of security, is a testiment to my
+                  disdain for the MTA. Fricken hate the B39. That bus sucks.
                 </p>
               </div>
             </Col>
-            <Col>
+            <Col className="MTAimageguys">
               <Image className="MTATime" src={MTALogo}></Image>
               <Image className="MTATime" src={WBT}></Image>
             </Col>
           </Row>
         </Container>
       </div>
-
+      <div className="paddingBR"></div>
       <Footer />
     </div>
   );
