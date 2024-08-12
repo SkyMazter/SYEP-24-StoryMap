@@ -92,6 +92,38 @@ const Soundscapes = () => {
         </Row>
       </Container>
 
+      <Carousel>
+        <Carousel.Item>
+          <div className=" d-flex justify-content-center align-items-center carousellImage">
+            <Image fluid src={Miguel}></Image>
+          </div>
+          <Carousel.Caption>
+            <h4 className="judson-regular">Behind the Scenes</h4>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className=" d-flex justify-content-center align-items-center carousellImage">
+            <Image fluid src={Joseph}></Image>
+          </div>
+          <Carousel.Caption>
+            <h4 className="judson-regular">Behind the Scenes</h4>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className=" d-flex justify-content-center align-items-center carousellImage">
+            <Image fluid src={Frances}></Image>
+          </div>
+          <Carousel.Caption>
+            <h4 className="judson-regular">Behind the Scenes</h4>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+      <p class="text-center">
+        <h5 className="judson-regular">
+          
+        </h5>{" "}
+      </p>
+
     <Container className="p-3">
         <Row>
           <Col>
