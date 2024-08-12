@@ -5,180 +5,127 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Figure from "react-bootstrap/Figure";
 import Image from "react-bootstrap/Image";
+import bridge from "./assets/bridge.png";
+import art from "./assets/art.png";
+import water from "./assets/water.png";
+import microphone from "./assets/microphone.png";
+import circleart from "./assets/circleart.png";
 
 import { Link } from "react-router-dom";
 import img from "./assets/placeholder.png";
 
 import Footer from "./components/Footer.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 function App() {
   return (
-    // <div>
-    //   <Container className="p-3">
-    //     <Row>
-    //       <Col className="justify-content-center d-flex">
-    //         <h3>Southside StoryMap</h3>
-    //       </Col>
-    //     </Row>
-    //     <Row>
-    //       <Col className="justify-content-center d-flex" xs={3}>
-    //         <Link>Home</Link>
-    //       </Col>
-    //       <Col className="justify-content-center d-flex" xs={3}>
-    //         <Link to={"/storymap"}>StoryMap</Link>
-    //       </Col>
-    //       <Col className="justify-content-center d-flex" xs={3}>
-    //         <Link>SoundScapes</Link>
-    //       </Col>
-    //       <Col className="justify-content-center d-flex" xs={3}>
-    //         <Link>Muralistas</Link>
-    //       </Col>
-    //     </Row>
-    //   </Container>
-    //   <div
-    //     className="bg-primary w-100 justify-content-center d-flex align-items-center"
-    //     style={{
-    //       position: "relative",
-    //     }}
-    //   >
-    //     <h3
-    //       style={{
-    //         position: "absolute",
-    //         zIndex: 3,
-    //       }}
-    //     >
-    //       {" "}
-    //      Subheader
-    //     </h3>
-    //     <Image
-    //       src={img}
-    //       style={{
-    //         height: "200px",
-    //         width: "100%",
-    //         position: "relative",
-    //         zIndex: 1,
-    //       }}
-    //     ></Image>
-    //   </div>
-    //   <Container className="p-3">
-    //     <Row>
-    //       <Col>
-    //         <h4>Title</h4>
-    //       </Col>
-    //     </Row>
-    //     <Row>
-    //       <Col xs={12} md={4}>
-    //         <Figure>
-    //           <Figure.Image
-    //             width={500}
-    //             height={100}
-    //             alt="171x180"
-    //             src={img}
-    //             fluid
-    //           />
-    //           <Figure.Caption>syep cohort 2024</Figure.Caption>
-    //         </Figure>
-    //       </Col>
-    //       <Col xs={12} md={8}>
-    //         {" "}
-    //         <p>
-    //           {" "}
-    //           Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim
-    //           pulvinar venenatis habitasse per tellus sociosqu eros rhoncus
-    //           adipiscing. Elit dignissim imperdiet ac massa facilisi quam
-    //           sollicitudin conubia. Cubilia efficitur litora magna amet; magnis
-    //           cras integer. Est eget commodo feugiat quisque facilisi dis lorem
-    //           proin. Tellus sagittis lobortis risus fusce ridiculus penatibus
-    //           volutpat integer. Lorem ipsum odor amet, consectetuer adipiscing
-    //           elit. Dignissim pulvinar venenatis habitasse per tellus sociosqu
-    //           eros rhoncus adipiscing. Elit dignissim imperdiet ac massa
-    //           facilisi quam sollicitudin conubia. Cubilia efficitur litora magna
-    //           amet; magnis cras integer. Est eget commodo feugiat quisque
-    //           facilisi dis lorem proin. Tellus sagittis lobortis risus fusce
-    //           ridiculus penatibus volutpat integer.
-    //         </p>{" "}
-    //         <p>
-    //           {" "}
-    //           Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim
-    //           pulvinar venenatis habitasse per tellus sociosqu eros rhoncus
-    //           adipiscing. Elit dignissim imperdiet ac massa facilisi quam
-    //           sollicitudin conubia. Cubilia efficitur litora magna amet; magnis
-    //           cras integer. Est eget commodo feugiat quisque facilisi dis lorem
-    //           proin. Tellus sagittis lobortis risus fusce ridiculus penatibus
-    //           volutpat integer. Lorem ipsum odor amet, consectetuer adipiscing
-    //           elit. Dignissim pulvinar venenatis habitasse per tellus sociosqu
-    //           eros rhoncus adipiscing. Elit dignissim imperdiet ac massa
-    //           facilisi quam sollicitudin conubia. Cubilia efficitur litora magna
-    //           amet; magnis cras integer. Est eget commodo feugiat quisque
-    //           facilisi dis lorem proin. Tellus sagittis lobortis risus fusce
-    //           ridiculus penatibus volutpat integer.
-    //         </p>{" "}
-    //       </Col>
-    //     </Row>
-    //   </Container>
-
-    //   <Container className="p-3">
-    //     <Row>
-    //       <Col xs={12} sm={4} md={{ order: "last" }}>
-    //         <Figure>
-    //           <Figure.Image
-    //             width={500}
-    //             height={100}
-    //             alt="171x180"
-    //             src={img}
-    //             fluid
-    //           />
-    //           <Figure.Caption>syep cohort 2024</Figure.Caption>
-    //         </Figure>
-    //       </Col>
-    //       <Col xs={12} md={8}>
-    //         {" "}
-    //         <p>
-    //           {" "}
-    //           Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim
-    //           pulvinar venenatis habitasse per tellus sociosqu eros rhoncus
-    //           adipiscing. Elit dignissim imperdiet ac massa facilisi quam
-    //           sollicitudin conubia. Cubilia efficitur litora magna amet; magnis
-    //           cras integer. Est eget commodo feugiat quisque facilisi dis lorem
-    //           proin. Tellus sagittis lobortis risus fusce ridiculus penatibus
-    //           volutpat integer. Lorem ipsum odor amet, consectetuer adipiscing
-    //           elit. Dignissim pulvinar venenatis habitasse per tellus sociosqu
-    //           eros rhoncus adipiscing. Elit dignissim imperdiet ac massa
-    //           facilisi quam sollicitudin conubia. Cubilia efficitur litora magna
-    //           amet; magnis cras integer. Est eget commodo feugiat quisque
-    //           facilisi dis lorem proin. Tellus sagittis lobortis risus fusce
-    //           ridiculus penatibus volutpat integer.
-    //         </p>{" "}
-    //         <p>
-    //           {" "}
-    //           Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim
-    //           pulvinar venenatis habitasse per tellus sociosqu eros rhoncus
-    //           adipiscing. Elit dignissim imperdiet ac massa facilisi quam
-    //           sollicitudin conubia. Cubilia efficitur litora magna amet; magnis
-    //           cras integer. Est eget commodo feugiat quisque facilisi dis lorem
-    //           proin. Tellus sagittis lobortis risus fusce ridiculus penatibus
-    //           volutpat integer. Lorem ipsum odor amet, consectetuer adipiscing
-    //           elit. Dignissim pulvinar venenatis habitasse per tellus sociosqu
-    //           eros rhoncus adipiscing. Elit dignissim imperdiet ac massa
-    //           facilisi quam sollicitudin conubia. Cubilia efficitur litora magna
-    //           amet; magnis cras integer. Est eget commodo feugiat quisque
-    //           facilisi dis lorem proin. Tellus sagittis lobortis risus fusce
-    //           ridiculus penatibus volutpat integer.
-    //         </p>{" "}
-    //       </Col>
-    //     </Row>
-    //   </Container>
-    // </div>
-    <Container fluid>
-      <Row>
-        <Col>
-          <Image></Image>
-        </Col>
-        <Col>
-          <Container></Container>
-        </Col>
-      </Row>
-    </Container>
+    <div>
+      <Container fluid style={{ backgroundColor: "#265F7E" }}>
+        <Row>
+          <Col md={3} className="p-0">
+            <Image fluid src={bridge} className="w-100 h-100"></Image>
+          </Col>
+          <Col md={9} className="p-0">
+            <Container fluid style={{ backgroundColor: "#265F7E" }}>
+              {" "}
+              <Row>
+                {" "}
+                <Col xs={12} className="p-0">
+                  <NavBar></NavBar>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  {" "}
+                  <h1
+                    className="quando-regular text-center"
+                    style={{ color: "white" }}
+                  >
+                    SouthSide Story Map
+                  </h1>
+                  <p className="judson-regular" style={{ color: "white" }}>
+                    The Summer Youth Employment Program, is a national program
+                    that connects youth, ages 14-21, to paid internships of
+                    their choice. This program allows youth to gain professional
+                    work experience along with learning more about their chosen
+                    career paths.
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  {" "}
+                  <p className="judson-regular" style={{ color: "white" }}>
+                    {" "}
+                    Throughout the 6 weeks of working at El Puente, youth
+                    employees have worked on canvassing to local residents,
+                    creating google surveys to gather information, designing
+                    posters, and learning how to formally interview people.
+                    Overall, El Puente’s goal is to inspire and educate our
+                    community on issues that effect not only Williamsburg, but
+                    New York City as a whole. Throughout this internship, we
+                    have done research on the harmful effects of the BQE, and
+                    truck routes. We have had the privilege of hearing residents
+                    stories and opinions on the impact of these services.{" "}
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="d-flex align-items-center justify-content-center">
+                  {" "}
+                  <Image fluid src={art} className="w-100 h-100"></Image>
+                </Col>
+                <Col className="d-flex align-items-center justify-content-center">
+                  <Image fluid src={microphone}></Image>
+                </Col>
+                <Col className="d-flex align-items-center justify-content-center">
+                  <Image fluid src={water} className="w-100 h-100"></Image>
+                </Col>
+              </Row>
+              <Row
+                className="quando-regular text-center"
+                style={{ color: "white" }}
+              >
+                {" "}
+                <h1>About us</h1>
+              </Row>
+              <Row>
+                <Col xs={12}
+                  md={4}>
+                  <Image fluid src={circleart} className="w-75 "></Image>
+                </Col>
+                <Col
+                  className="judson-regular text-center justify-content-center p-2 "
+                  style={{ color: "white" }}
+                  xs={12}
+                  md={8}
+                >
+                  {" "}
+                  <p>
+                    Gravida phasellus vulputate lobortis efficitur tempus lectus
+                    potenti. Vestibulum habitasse purus duis odio at
+                    pellentesque lobortis. Ac tempor mattis consequat; cras
+                    ultrices odio. Laoreet dictum facilisis tristique elementum
+                    eros suscipit vivamus. Iaculis nisi elit massa facilisi
+                    pellentesque. Efficitur pulvinar iaculis potenti vivamus;
+                    morbi aliquet massa venenatis. Suscipit facilisis litora,
+                    nisi montes cursus aenean. Semper convallis parturient
+                    lobortis; convallis et aliquet. Elementum parturient blandit
+                    porttitor magnis amet. Torquent pharetra a adipiscing
+                    pharetra bibendum.
+                  </p>
+                </Col>
+              </Row>
+            </Container>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="p-0">
+            <Footer></Footer>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
 
