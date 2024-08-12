@@ -10,7 +10,6 @@ import water from "./assets/water.png";
 import microphone from "./assets/microphone.png";
 import circleart from "./assets/circleart.png";
 
-
 import img from "./assets/placeholder.png";
 
 import Footer from "./components/Footer.jsx";
@@ -89,8 +88,7 @@ function App() {
                 <h1>About us</h1>
               </Row>
               <Row>
-                <Col xs={12}
-                  md={4}>
+                <Col xs={12} md={4}>
                   <Image fluid src={circleart} className="w-75 "></Image>
                 </Col>
                 <Col
