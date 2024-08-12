@@ -278,11 +278,8 @@ const Storymap = () => {
         </Col>
       </Container>
 
-      <p class="text-center">
-        <h1
-          className="quando-regular"
-          style={{ backgroundColor: "#83AEAE", color: "white" }}
-        >
+      <p>
+        <h1 className="quando-regular">
           Reviving The BQE
         </h1>{" "}
       </p>
@@ -438,7 +435,7 @@ const Storymap = () => {
         <Row>
           <Col
             className="py-3 "
-            style={{ backgroundColor: "#00787A", color: "white" }}
+            style={{ backgroundColor: "#d4e4fe", color: "black" }}
             xs={12}
             md={4}
           >
@@ -458,7 +455,7 @@ const Storymap = () => {
           </Col>
           <Col
             className="py-3"
-            style={{ backgroundColor: "#003D34", color: "white" }}
+            style={{ backgroundColor: "#083B61", color: "white" }}
             xs={12}
             md={4}
           >
@@ -485,7 +482,7 @@ const Storymap = () => {
           </Col>
           <Col
             className="py-3"
-            style={{ backgroundColor: "#5CAEAF", color: "white" }}
+            style={{ backgroundColor: "#083B61", color: "white" }}
             xs={12}
             md={4}
           >
