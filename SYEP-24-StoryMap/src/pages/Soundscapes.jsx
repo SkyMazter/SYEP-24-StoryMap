@@ -13,6 +13,7 @@ import Box from "../assets/square-xxl.png";
 import EP from "../assets/ITH3csmT_400x400.jpg";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import Miguel from "../assets/Miguel Hernandez and Gabriele Blazyte_3.jpeg";
 
 const Soundscapes = () => {
     return (
@@ -20,104 +21,113 @@ const Soundscapes = () => {
             <NavBar />
       <Container className="p-3">
         <Row>
-          <Col className="py-3" xs={12} md={8}>
+          <Col>
             {" "}
             <p class="text-center">
-        <h1
-          className="judson-regular"
-        >
-          Southside Soundscapes
-        </h1>{" "}
+        <h1 className="judson-regular">Southside Soundscapes</h1>{" "}
         </p>
             <p class="text-center">
         <h3 className="judson-regular">
-          The Voices of the Community/Los Sures
+          The Voices of Los Sures
         </h3>{" "}
       </p>
             <p class="text-center" className="judson-regular">
         Southside Soundscapes is a collection of audio recordings, recorded by a group of
-         youth organizers at El Puente around the neighborhood of Los Sures. AS youth 
+         youth organizers at El Puente in the Southside of Williamsburg. As youth 
          organizers, a huge part of our job at El Puente is outreaching throughout the 
-         community.
+         community. In 2024, we started recording conversations among our community in 
+         the Southside of Williamsburg. These are our stories of activism, transformation,
+          creativity, joy, loss, and love. In this first set of interviews, young members 
+          of the El Puente team interview elders and leaders, who share their stories about 
+          growing up in the neighborhood, creating organizations, art and social movements, 
+          and witnessing their communities transform.
       </p>
-          </Col>
-        </Row>
-      </Container>
-      
-      <CardGroup>
+      <CardGroup className="mx-5">
       <Card>
         <Card.Img variant="top" src={Box} />
         <Card.Body>
-          <Card.Title>Audio #1</Card.Title>
-          <Card.Text>
+          <Card.Title className="judson-regular">Audio #1</Card.Title>
+          <Card.Text className="judson-regular">
           This card has supporting text below as a natural lead-in to
           additional content.
           </Card.Text>
-          <Button variant="link">Listen</Button>
+          <Button class="text-center" variant="success">Play</Button>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">July 19th • 3 minutes</small>
+          <small className="judson-regular">July 19th • 3 minutes</small>
         </Card.Footer>
       </Card>
       <Card>
         <Card.Img variant="top" src={Box}/>
         <Card.Body>
-          <Card.Title>Audio #2</Card.Title>
-          <Card.Text>
+          <Card.Title className="judson-regular">Audio #2</Card.Title>
+          <Card.Text className="judson-regular">
             This card has supporting text below as a natural lead-in to
             additional content.{' '}
           </Card.Text>
-          <Button variant="link">Listen</Button>
+          <Button class="text-center" variant="success">Play</Button>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">July 19th • 3 minutes</small>
+          <small className="judson-regular">July 19th • 3 minutes</small>
         </Card.Footer>
       </Card>
       <Card>
         <Card.Img variant="top" src={Box} />
         <Card.Body>
-          <Card.Title>Audio #3</Card.Title>
-          <Card.Text>
+          <Card.Title className="judson-regular">Audio #3</Card.Title>
+          <Card.Text className="judson-regular">
           This card has supporting text below as a natural lead-in to
           additional content.
           </Card.Text>
-          <Button variant="link">Listen</Button>
+          <Button class="text-center" variant="success">Play</Button>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">July 19th • 3 minutes</small>
+          <small className="judson-regular">July 19th • 3 minutes</small>
         </Card.Footer>
       </Card>
     </CardGroup>
-    <CardGroup>
+    </Col>
+        </Row>
+      </Container>
+
+    <Container className="p-3">
+        <Row>
+          <Col>
+            {" "}
+            <CardGroup className="mx-5">
       <Card>
         <Card.Img variant="top" src={Box} />
         <Card.Body>
-          <Card.Title>Audio #4</Card.Title>
-          <Card.Text>
+          <Card.Title className="judson-regular">Audio #4</Card.Title>
+          <Card.Text className="judson-regular">
           This card has supporting text below as a natural lead-in to
           additional content.
           </Card.Text>
-          <Button variant="link">Listen</Button>
+          <Button class="text-center" variant="success">Play</Button>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">July 19th • 3 minutes</small>
+          <small className="judson-regular">July 19th • 3 minutes</small>
         </Card.Footer>
       </Card>
       <Card>
         <Card.Img variant="top" src={Box} />
         <Card.Body>
-          <Card.Title>Audio #5</Card.Title>
-          <Card.Text>
+          <Card.Title className="judson-regular">Audio #5</Card.Title>
+          <Card.Text className="judson-regular">
             This card has supporting text below as a natural lead-in to
             additional content.{' '}
           </Card.Text>
-          <Button variant="link">Listen</Button>
+          <Button class="text-center" variant="success">Play</Button>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">July 19th • 3 minutes</small>
+          <small className="judson-regular">July 19th • 3 minutes</small>
         </Card.Footer>
       </Card>
     </CardGroup>
+          </Col>
+        </Row>
+      </Container>
+
             <Footer />
         </div>
     )

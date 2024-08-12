@@ -27,7 +27,7 @@ const Storymap = () => {
       <p class="text-center">
         <h1
           className="quando-regular"
-          style={{ backgroundColor: "#5CAEAF", color: "white" }}
+          style={{ backgroundColor: "#83AEAE", color: "white" }}
         >
           Reviving The BQE
         </h1>{" "}
