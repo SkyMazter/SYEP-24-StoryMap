@@ -15,7 +15,7 @@ const NavBar = () => {
           <Link to={"/storymap"}>StoryMap</Link>
         </Col>
         <Col className="justify-content-center d-flex" xs={3}>
-          <Link>SoundScapes</Link>
+          <Link to={"/soundscapes"}>SoundScapes</Link>
         </Col>
         <Col className="justify-content-center d-flex" xs={3}>
           <Link>Muralistas</Link>
