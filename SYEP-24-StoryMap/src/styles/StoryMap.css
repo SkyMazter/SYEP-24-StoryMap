@@ -1,20 +1,35 @@
 #yes {
     color: #003D34;
-    text-shadow: 20px #00787a;
-}
-
-#gone {
-    color: #94ebd8;
+    text-shadow: 20px #ffffff;
 }
 
 .MTASucks {
-    background-color: #94ebd8;
+    background-color: #083B61;
 }
 
 .MTATime {
-    width: 660px;
+    width: 600px;
+    padding: 5%;
 }
 
 .backdrop {
-    color: #00787a;
+    color: #083B61;
+    background-color: #d4e4fe;
+    border-radius: 25px;
+}
+
+.paddingBR {
+    padding: 20px;
+    background-color: #083B61;
+}
+
+@media screen and (width <= 1024px) {
+    .MTAimageguys {
+        display: none;
+    }
+}
+
+.paddingJ {
+    padding: 20px;
+    background-color: #ffffff;
 }
