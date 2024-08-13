@@ -3,18 +3,28 @@
     text-shadow: 20px #00787a;
 }
 
-#gone {
-    color: #94ebd8;
-}
-
 .MTASucks {
-    background-color: #94ebd8;
+    background-color: #73b7a8;
 }
 
 .MTATime {
-    width: 660px;
+    width: 600px;
+    padding: 5%;
 }
 
 .backdrop {
-    color: #00787a;
+    color: #94ebd8;
+    background-color: #00787a;
+    border-radius: 25px;
+}
+
+.paddingBR {
+    padding: 20px;
+    background-color: #73b7a8;
+}
+
+@media screen and (width <= 1024px) {
+    .MTAimageguys {
+        display: none;
+    }
 }

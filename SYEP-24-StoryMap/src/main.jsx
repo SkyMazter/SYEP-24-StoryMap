@@ -7,6 +7,8 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Storymap from "./pages/Storymap.jsx";
 import Muralistas from "./pages/Muralistas.jsx";
+import Soundscapes from "./pages/Soundscapes.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
     path: "/muralistas",
     element: <Muralistas></Muralistas>
   },
+  {
+    path: "/soundscapes",
+    element: <Soundscapes/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
