@@ -16,6 +16,24 @@ import CardGroup from "react-bootstrap/CardGroup";
 import Miguel from "../assets/Miguel Hernandez and Gabriele Blazyte_3.jpeg";
 import Joseph from "../assets/Joseph Matonis and Branden Henderson_1.jpg";
 import Frances from "../assets/Copy of Frances_Britney_4.jpg";
+import React from "react";
+import {
+  Player,
+  ControlBar,
+  TimeDivider,
+  PlayToggle,
+  VolumeMenuButton,
+  PlaybackRateMenuButton,
+  PosterImage,
+  ReplayControl,
+  ForwardControl,
+  BigPlayButton,
+  ClosedCaptionButton,
+  CurrentTimeDisplay,
+} from "video-react";
+import Garden from "../assets/YS&J.mp4";
+import Rodney from "../assets/Rodney-2.mp4";
+import BusDepot from "../assets/BusDepot-2.mp4";
 
 const Soundscapes = () => {
   return (
@@ -32,61 +50,75 @@ const Soundscapes = () => {
               <h3 className="judson-regular">The Voices of Los Sures</h3>{" "}
             </p>
             <p class="text-center" className="judson-regular">
-        Southside Soundscapes is a collection of audio recordings, recorded by a group of
-         youth organizers at El Puente in the Southside of Williamsburg. As youth 
-         organizers, a huge part of our job at El Puente is outreaching throughout the 
-         community. In 2024, we started recording conversations among our community in 
-         the Southside of Williamsburg. These are our stories of activism, transformation,
-          creativity, joy, loss, and love. In this first set of interviews, young members 
-          of the El Puente team interview elders and leaders, who share their stories about 
-          growing up in the neighborhood, creating organizations, art and social movements, 
-          and witnessing their communities transform.
-      </p>
-      <CardGroup className="mx-5">
-      <Card>
-        <Card.Img variant="top" src={Box} />
-        <Card.Body>
-          <Card.Title className="judson-regular">Audio #1</Card.Title>
-          <Card.Text className="judson-regular">
-          This card has supporting text below as a natural lead-in to
-          additional content.
-          </Card.Text>
-          <Button class="text-center" variant="primary">Play</Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="judson-regular">July 19th • 3 minutes</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src={Box}/>
-        <Card.Body>
-          <Card.Title className="judson-regular">Audio #2</Card.Title>
-          <Card.Text className="judson-regular">
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
-          </Card.Text>
-          <Button class="text-center" variant="primary">Play</Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="judson-regular">July 19th • 3 minutes</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src={Box} />
-        <Card.Body>
-          <Card.Title className="judson-regular">Audio #3</Card.Title>
-          <Card.Text className="judson-regular">
-          This card has supporting text below as a natural lead-in to
-          additional content.
-          </Card.Text>
-          <Button class="text-center" variant="primary">Play</Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="judson-regular">July 19th • 3 minutes</small>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
-    </Col>
+              Southside Soundscapes is a collection of audio recordings,
+              recorded by a group of youth organizers at El Puente in the
+              Southside of Williamsburg. As youth organizers, a huge part of our
+              job at El Puente is outreaching throughout the community. In 2024,
+              we started recording conversations among our community in the
+              Southside of Williamsburg. These are our stories of activism,
+              transformation, creativity, joy, loss, and love. In this first set
+              of interviews, young members of the El Puente team interview
+              elders and leaders, who share their stories about growing up in
+              the neighborhood, creating organizations, art and social
+              movements, and witnessing their communities transform.
+            </p>
+            <CardGroup className="mx-5">
+              <Card>
+                <Card.Img variant="top" src={Box} />
+                <Card.Body>
+                  <Card.Title className="judson-regular">Audio #1</Card.Title>
+                  <Card.Text className="judson-regular">
+                    This card has supporting text below as a natural lead-in to
+                    additional content.
+                  </Card.Text>
+                  <Button class="text-center" variant="primary">
+                    Play
+                  </Button>
+                </Card.Body>
+                <Card.Footer>
+                  <small className="judson-regular">
+                    July 19th • 3 minutes
+                  </small>
+                </Card.Footer>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src={Box} />
+                <Card.Body>
+                  <Card.Title className="judson-regular">Audio #2</Card.Title>
+                  <Card.Text className="judson-regular">
+                    This card has supporting text below as a natural lead-in to
+                    additional content.{" "}
+                  </Card.Text>
+                  <Button class="text-center" variant="primary">
+                    Play
+                  </Button>
+                </Card.Body>
+                <Card.Footer>
+                  <small className="judson-regular">
+                    July 19th • 3 minutes
+                  </small>
+                </Card.Footer>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src={Box} />
+                <Card.Body>
+                  <Card.Title className="judson-regular">Audio #3</Card.Title>
+                  <Card.Text className="judson-regular">
+                    This card has supporting text below as a natural lead-in to
+                    additional content.
+                  </Card.Text>
+                  <Button class="text-center" variant="primary">
+                    Play
+                  </Button>
+                </Card.Body>
+                <Card.Footer>
+                  <small className="judson-regular">
+                    July 19th • 3 minutes
+                  </small>
+                </Card.Footer>
+              </Card>
+            </CardGroup>
+          </Col>
         </Row>
       </Container>
 
@@ -125,39 +157,63 @@ const Soundscapes = () => {
           <Col>
             {" "}
             <CardGroup className="mx-5">
-      <Card>
-        <Card.Img variant="top" src={Box} />
-        <Card.Body>
-          <Card.Title className="judson-regular">Audio #4</Card.Title>
-          <Card.Text className="judson-regular">
-          This card has supporting text below as a natural lead-in to
-          additional content.
-          </Card.Text>
-          <Button class="text-center" variant="primary">Play</Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="judson-regular">July 19th • 3 minutes</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src={Box} />
-        <Card.Body>
-          <Card.Title className="judson-regular">Audio #5</Card.Title>
-          <Card.Text className="judson-regular">
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
-          </Card.Text>
-          <Button class="text-center" variant="primary">Play</Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="judson-regular">July 19th • 3 minutes</small>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
+              <Card>
+                <Card.Img variant="top" src={Box} />
+                <Card.Body>
+                  <Card.Title className="judson-regular">Audio #4</Card.Title>
+                  <Card.Text className="judson-regular">
+                    This card has supporting text below as a natural lead-in to
+                    additional content.
+                  </Card.Text>
+                  <Button class="text-center" variant="primary">
+                    Play
+                  </Button>
+                </Card.Body>
+                <Card.Footer>
+                  <small className="judson-regular">
+                    July 19th • 3 minutes
+                  </small>
+                </Card.Footer>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src={Box} />
+                <Card.Body>
+                  <Card.Title className="judson-regular">Audio #5</Card.Title>
+                  <Card.Text className="judson-regular">
+                    This card has supporting text below as a natural lead-in to
+                    additional content.{" "}
+                  </Card.Text>
+                  <Button class="text-center" variant="primary">
+                    Play
+                  </Button>
+                </Card.Body>
+                <Card.Footer>
+                  <small className="judson-regular">
+                    July 19th • 3 minutes
+                  </small>
+                </Card.Footer>
+              </Card>
+            </CardGroup>
           </Col>
         </Row>
       </Container>
-
+      <div
+        style={{
+          width: "100vw",
+        }}
+      >
+        <Player>
+          <source src={Rodney} />
+          <ControlBar>
+            <ReplayControl seconds={10} order={1.1} />
+            <ForwardControl seconds={30} order={1.2} />
+            <CurrentTimeDisplay order={4.1} />
+            <TimeDivider order={4.2} />
+            <PlaybackRateMenuButton rates={[5, 2, 1, 0.5, 0.1]} order={7.1} />
+            <VolumeMenuButton disabled />
+          </ControlBar>
+        </Player>
+      </div>
 
       <Footer />
     </div>
