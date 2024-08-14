@@ -53,7 +53,7 @@ const Soundscapes = () => {
           This card has supporting text below as a natural lead-in to
           additional content.
           </Card.Text>
-          <Button class="text-center" variant="success">Play</Button>
+          <Button class="text-center" variant="primary">Play</Button>
         </Card.Body>
         <Card.Footer>
           <small className="judson-regular">July 19th • 3 minutes</small>
@@ -67,7 +67,7 @@ const Soundscapes = () => {
             This card has supporting text below as a natural lead-in to
             additional content.{' '}
           </Card.Text>
-          <Button class="text-center" variant="success">Play</Button>
+          <Button class="text-center" variant="primary">Play</Button>
         </Card.Body>
         <Card.Footer>
           <small className="judson-regular">July 19th • 3 minutes</small>
@@ -81,7 +81,7 @@ const Soundscapes = () => {
           This card has supporting text below as a natural lead-in to
           additional content.
           </Card.Text>
-          <Button class="text-center" variant="success">Play</Button>
+          <Button class="text-center" variant="primary">Play</Button>
         </Card.Body>
         <Card.Footer>
           <small className="judson-regular">July 19th • 3 minutes</small>
@@ -137,7 +137,7 @@ const Soundscapes = () => {
           This card has supporting text below as a natural lead-in to
           additional content.
           </Card.Text>
-          <Button class="text-center" variant="success">Play</Button>
+          <Button class="text-center" variant="primary">Play</Button>
         </Card.Body>
         <Card.Footer>
           <small className="judson-regular">July 19th • 3 minutes</small>
@@ -151,7 +151,7 @@ const Soundscapes = () => {
             This card has supporting text below as a natural lead-in to
             additional content.{' '}
           </Card.Text>
-          <Button class="text-center" variant="success">Play</Button>
+          <Button class="text-center" variant="primary">Play</Button>
         </Card.Body>
         <Card.Footer>
           <small className="judson-regular">July 19th • 3 minutes</small>
@@ -161,6 +161,7 @@ const Soundscapes = () => {
           </Col>
         </Row>
       </Container>
+
 
             <Footer />
         </div>
