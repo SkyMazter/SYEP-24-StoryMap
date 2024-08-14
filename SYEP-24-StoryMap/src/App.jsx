@@ -20,10 +20,10 @@ function App() {
     <div>
       <Container fluid style={{ backgroundColor: "#265F7E" }}>
         <Row>
-          <Col md={3} className="p-0">
+          <Col md={2} className="p-0">
             <Image fluid src={bridge} className="w-100 h-100"></Image>
           </Col>
-          <Col md={9} className="p-0">
+          <Col md={10} className="p-0">
             <Container fluid style={{ backgroundColor: "#265F7E" }}>
               {" "}
               <Row>
