@@ -26,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/soundscapes",
     element: <Soundscapes/>
+  },  
+  {
+    path: "/videos.jsx",
+    element: <Videos/>
   }
 ]);
 

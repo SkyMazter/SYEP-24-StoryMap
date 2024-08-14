@@ -158,7 +158,6 @@ const Soundscapes = () => {
         </Row>
       </Container>
 
-
       <Footer />
     </div>
   );
