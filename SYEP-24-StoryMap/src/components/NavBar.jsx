@@ -58,7 +58,7 @@ const NavBar = () => {
                   color: "white",
                 }}
               >
-                Mutalistas
+                Muralistas
               </Link>
             </Nav.Link>
 
