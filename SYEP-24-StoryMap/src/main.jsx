@@ -8,7 +8,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Storymap from "./pages/Storymap.jsx";
 import Muralistas from "./pages/Muralistas.jsx";
 import Soundscapes from "./pages/Soundscapes.jsx";
-
+import Videos from "./pages/Videos.jsx";
+import "../node_modules/video-react/dist/video-react.css"; // import css
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/soundscapes",
     element: <Soundscapes/>
+  },  
+  {
+    path: "/videos",
+    element: <Videos/>
   }
 ]);
 
