@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/muralistas",
-    element: <Muralistas></Muralistas>
+    element: <Muralistas/>
   },
   {
     path: "/soundscapes",

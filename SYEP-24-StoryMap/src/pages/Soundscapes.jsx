@@ -11,28 +11,26 @@ import Image from "react-bootstrap/Image";
 import NavBar from "../components/NavBar.jsx";
 import Box from "../assets/square-xxl.png";
 import EP from "../assets/ITH3csmT_400x400.jpg";
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
 import Miguel from "../assets/Miguel Hernandez and Gabriele Blazyte_3.jpeg";
 import Joseph from "../assets/Joseph Matonis and Branden Henderson_1.jpg";
 import Frances from "../assets/Copy of Frances_Britney_4.jpg";
 
 const Soundscapes = () => {
-    return (
-        <div>
-            <NavBar />
+  return (
+    <div>
+      <NavBar />
       <Container className="p-3">
         <Row>
           <Col>
             {" "}
             <p class="text-center">
-        <h1 className="judson-regular">Southside Soundscapes</h1>{" "}
-        </p>
+              <h1 className="judson-regular">Southside Soundscapes</h1>{" "}
+            </p>
             <p class="text-center">
-        <h3 className="judson-regular">
-          The Voices of Los Sures
-        </h3>{" "}
-      </p>
+              <h3 className="judson-regular">The Voices of Los Sures</h3>{" "}
+            </p>
             <p class="text-center" className="judson-regular">
         Southside Soundscapes is a collection of audio recordings, recorded by a group of
          youth organizers at El Puente in the Southside of Williamsburg. As youth 
@@ -53,7 +51,7 @@ const Soundscapes = () => {
           This card has supporting text below as a natural lead-in to
           additional content.
           </Card.Text>
-          <Button class="text-center" variant="success">Play</Button>
+          <Button class="text-center" variant="primary">Play</Button>
         </Card.Body>
         <Card.Footer>
           <small className="judson-regular">July 19th • 3 minutes</small>
@@ -67,7 +65,7 @@ const Soundscapes = () => {
             This card has supporting text below as a natural lead-in to
             additional content.{' '}
           </Card.Text>
-          <Button class="text-center" variant="success">Play</Button>
+          <Button class="text-center" variant="primary">Play</Button>
         </Card.Body>
         <Card.Footer>
           <small className="judson-regular">July 19th • 3 minutes</small>
@@ -81,7 +79,7 @@ const Soundscapes = () => {
           This card has supporting text below as a natural lead-in to
           additional content.
           </Card.Text>
-          <Button class="text-center" variant="success">Play</Button>
+          <Button class="text-center" variant="primary">Play</Button>
         </Card.Body>
         <Card.Footer>
           <small className="judson-regular">July 19th • 3 minutes</small>
@@ -119,12 +117,10 @@ const Soundscapes = () => {
         </Carousel.Item>
       </Carousel>
       <p class="text-center">
-        <h5 className="judson-regular">
-          
-        </h5>{" "}
+        <h5 className="judson-regular"></h5>{" "}
       </p>
 
-    <Container className="p-3">
+      <Container className="p-3">
         <Row>
           <Col>
             {" "}
@@ -137,7 +133,7 @@ const Soundscapes = () => {
           This card has supporting text below as a natural lead-in to
           additional content.
           </Card.Text>
-          <Button class="text-center" variant="success">Play</Button>
+          <Button class="text-center" variant="primary">Play</Button>
         </Card.Body>
         <Card.Footer>
           <small className="judson-regular">July 19th • 3 minutes</small>
@@ -151,7 +147,7 @@ const Soundscapes = () => {
             This card has supporting text below as a natural lead-in to
             additional content.{' '}
           </Card.Text>
-          <Button class="text-center" variant="success">Play</Button>
+          <Button class="text-center" variant="primary">Play</Button>
         </Card.Body>
         <Card.Footer>
           <small className="judson-regular">July 19th • 3 minutes</small>
@@ -162,9 +158,10 @@ const Soundscapes = () => {
         </Row>
       </Container>
 
-            <Footer />
-        </div>
-    )
-}
 
-export default Soundscapes
+      <Footer />
+    </div>
+  );
+};
+
+export default Soundscapes;

@@ -35,14 +35,14 @@ const Storymap = () => {
         className="quando-regular"
         style={{
           backgroundColor: "#d4e4fe",
-          color: "black",
+          color: "#083B61",
           textAlign: "center",
         }}
       >
         Air Quality
       </h3>
       <p className="my-4"></p>
-      <Container fluid style={{ backgroundColor: "#d4e4fe", color: "black" }}>
+      <Container fluid style={{ backgroundColor: "#083B61", color: "white" }}>
         <h5 className="quando-regular">
           {" "}
           What is Air Quality? Who does it affect?
@@ -63,10 +63,10 @@ const Storymap = () => {
           <Image src={airscale} id="airscale"></Image>
           <div className="col">
             <p className="my-3"></p>
-            <h5 className="quando-regular" style={{ color: "black" }}>
+            <h5 className="quando-regular" style={{ color: "#083B61" }}>
               Why is Air Quality Important?
             </h5>
-            <p className="judson-regular" style={{ color: "black" }}>
+            <p className="judson-regular" style={{ color: "#083B61" }}>
               Humans and the environment need air and breathe a lot of it,
               people who spend time near busy roadways, and breathing in such
               harsh conditions of air will only lead to health problems and a
@@ -77,10 +77,10 @@ const Storymap = () => {
               Poor air quality can slowly deteriorate your physical and mental
               health if exposed constantly to it.
             </p>
-            <h5 className="quando-regular" style={{ color: "black" }}>
+            <h5 className="quando-regular" style={{ color: "#083B61" }}>
               Air Quality in Williamsburg
             </h5>
-            <p className="judson-regular" style={{ color: "black" }}>
+            <p className="judson-regular" style={{ color: "#083B61" }}>
               Williamsburg, NY Air Quality forecast has been extremely poor and
               has a consistent air quality of around the 60s which is moderate
               for breathing and is significantly lower than good air which is
@@ -103,7 +103,7 @@ const Storymap = () => {
             class="accordion-header"
             className="quando-regular"
             style={{
-              color: "black",
+              color: "#083B61",
               textAlign: "center",
             }}
           >
@@ -143,7 +143,7 @@ const Storymap = () => {
             class="accordion-header"
             className="quando-regular"
             style={{
-              backgroundColor: "#d4e4fe",
+              backgroundColor: "##083B61",
               textAlign: "center",
             }}
           >
@@ -187,7 +187,7 @@ const Storymap = () => {
       <Container
         className="Air Quality and the BQE"
         fluid
-        style={{ backgroundColor: "#d4e4fe", color: "black" }}
+        style={{ backgroundColor: "#083B61", color: "white" }}
       >
         <Col>
           <Row>
@@ -238,7 +238,7 @@ const Storymap = () => {
                         <th
                           scope="col"
                           className="judson-regular"
-                          style={{ color: "black" }}
+                          style={{ color: "white" }}
                         >
                           {" "}
                           - Less than 1% of global land area has safe pollution
@@ -251,7 +251,7 @@ const Storymap = () => {
                         <th
                           scope="row"
                           className="judson-regular"
-                          style={{ color: "black" }}
+                          style={{ color: "white" }}
                         >
                           {" "}
                           - At least 1 in 10 people die from air
@@ -262,7 +262,7 @@ const Storymap = () => {
                         <th
                           scope="row"
                           className="judson-regular"
-                          style={{ color: "black" }}
+                          style={{ color: "white" }}
                         >
                           {" "}
                           - Air pollution is a great threat to life expectancy
@@ -277,17 +277,19 @@ const Storymap = () => {
           </Row>
         </Col>
       </Container>
-
-      <p class="text-center">
-        <h1
-          className="quando-regular"
-          style={{ backgroundColor: "#83AEAE", color: "white" }}
-        >
+  <br></br>
+      <p>
+        <h1 className="quando-regular justify-content-center d-flex"
+        style={{ backgroundColor: "#d4e4fe", color: "#083B61" }}
+        xs={12}
+        md={4}>
           Reviving The BQE
         </h1>{" "}
       </p>
-
-      <Container className="p-3">
+      <Container className="p-3"
+      style={{ backgroundColor: "#d4e4fe", color: "#083B61" }}
+      xs={12}
+      md={12}>
         <Row>
           <Col className="py-3"></Col>
         </Row>
@@ -350,7 +352,7 @@ const Storymap = () => {
           </Col>
         </Row>
       </Container>
-
+      <br></br>
       <Carousel>
         <Carousel.Item>
           <div className=" d-flex justify-content-center align-items-center carousellImage">
@@ -379,9 +381,12 @@ const Storymap = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-
+      <br></br>
       <div>
-        <Container className="p-3">
+        <Container className="p-3"
+        style={{ backgroundColor: "#d4e4fe", color: "#083B61" }}
+        xs={12}
+        md={4}>
           <Row>
             <Col></Col>
           </Row>
@@ -432,13 +437,14 @@ const Storymap = () => {
             </Col>
           </Row>
         </Container>
+        <div className="paddingJ"></div>
       </div>
 
       <Container className="climate-change" fluid>
         <Row>
           <Col
             className="py-3 "
-            style={{ backgroundColor: "#00787A", color: "white" }}
+            style={{ backgroundColor: "#083B61", color: "white" }}
             xs={12}
             md={4}
           >
@@ -458,7 +464,7 @@ const Storymap = () => {
           </Col>
           <Col
             className="py-3"
-            style={{ backgroundColor: "#003D34", color: "white" }}
+            style={{ backgroundColor: "#d4e4fe", color: "#083B61" }}
             xs={12}
             md={4}
           >
@@ -485,7 +491,7 @@ const Storymap = () => {
           </Col>
           <Col
             className="py-3"
-            style={{ backgroundColor: "#5CAEAF", color: "white" }}
+            style={{ backgroundColor: "#083B61", color: "white" }}
             xs={12}
             md={4}
           >
@@ -512,10 +518,11 @@ const Storymap = () => {
           </Col>
         </Row>
       </Container>
-
+      <br></br>
       <div className="MTASucks">
         <div className="paddingBR"></div>
-        <h1 id="yes" className="justify-content-center d-flex quando-regular">
+        <h1 id="yes" className="justify-content-center d-flex quando-regular"
+        style={{ backgroundColor: "#083B61", color: "white" }}>
           Transit and it's... quirks
         </h1>
         <br></br>
