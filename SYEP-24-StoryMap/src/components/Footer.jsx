@@ -2,6 +2,7 @@ import "../styles/Footer.css";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,12 +12,14 @@ const Footer = () => {
       <Row>
         <Col>
           <h3>Learn More!</h3>
-          <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim
-            pulvinar venenatis habitasse per tellus sociosqu eros rhoncus
-            adipiscing. Elit dignissim imperdiet ac massa facilisi quam
-            sollicitudin conubia.
-          </p>
+          <Link
+            to="https://www.elpuente.org"
+            style={{
+              color: "white",
+            }}
+          >
+            <h4>El Puente De Williamsburg Official Site</h4>
+          </Link>
         </Col>
         <Col>
           <Container>
@@ -24,12 +27,12 @@ const Footer = () => {
               <Col>
                 {" "}
                 <h4>Email:</h4>
-                <p>example@email.com</p>
+                <p>info@elpuente.us</p>
               </Col>
               <Col>
                 {" "}
                 <h4>Phone:</h4>
-                <p>800-888-8888</p>
+                <p>(718)-387-0404 </p>
               </Col>
             </Row>
           </Container>

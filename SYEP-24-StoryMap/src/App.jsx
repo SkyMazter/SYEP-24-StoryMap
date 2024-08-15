@@ -10,7 +10,9 @@ import water from "./assets/water.png";
 import microphone from "./assets/microphone.png";
 import circleart from "./assets/circleart.png";
 
-import img from "./assets/placeholder.png";
+import Title from "./assets/TITLE.png";
+
+import Group from "./assets/groupPic.png";
 
 import Footer from "./components/Footer.jsx";
 import NavBar from "./components/NavBar.jsx";
@@ -20,10 +22,10 @@ function App() {
     <div>
       <Container fluid style={{ backgroundColor: "#265F7E" }}>
         <Row>
-          <Col md={2} className="p-0">
+          {/* <Col md={2} className="p-0">
             <Image fluid src={bridge} className="w-100 h-100"></Image>
-          </Col>
-          <Col md={10} className="p-0">
+          </Col> */}
+          <Col xs={12} className="p-0">
             <Container fluid style={{ backgroundColor: "#265F7E" }}>
               {" "}
               <Row>
@@ -33,15 +35,14 @@ function App() {
                 </Col>
               </Row>
               <Row>
+                {" "}
+                <Col xs={12} className="p-0">
+                  <Image fluid src={Title}></Image>
+                </Col>
+              </Row>
+              <Row>
                 <Col>
-                  {" "}
-                  <h1
-                    className="quando-regular text-center"
-                    style={{ color: "white" }}
-                  >
-                    SouthSide Story Map
-                  </h1>
-                  <p className="judson-regular" style={{ color: "white" }}>
+                  <p className="judson-regular p-3" style={{ color: "white" }}>
                     The Summer Youth Employment Program, is a national program
                     that connects youth, ages 14-21, to paid internships of
                     their choice. This program allows youth to gain professional
@@ -53,7 +54,7 @@ function App() {
               <Row>
                 <Col>
                   {" "}
-                  <p className="judson-regular" style={{ color: "white" }}>
+                  <p className="judson-regular p-3" style={{ color: "white" }}>
                     {" "}
                     Throughout the 6 weeks of working at El Puente, youth
                     employees have worked on canvassing to local residents,
@@ -68,7 +69,7 @@ function App() {
                   </p>
                 </Col>
               </Row>
-              <Row>
+              {/* <Row>
                 <Col className="d-flex align-items-center justify-content-center">
                   {" "}
                   <Image fluid src={art} className="w-100 h-100"></Image>
@@ -79,7 +80,7 @@ function App() {
                 <Col className="d-flex align-items-center justify-content-center">
                   <Image fluid src={water} className="w-100 h-100"></Image>
                 </Col>
-              </Row>
+              </Row> */}
               <Row
                 className="quando-regular text-center"
                 style={{ color: "white" }}
@@ -89,7 +90,7 @@ function App() {
               </Row>
               <Row>
                 <Col xs={12} md={4}>
-                  <Image fluid src={circleart} className="w-75 "></Image>
+                  <Image fluid src={Group} className="w-100 p-2"></Image>
                 </Col>
                 <Col
                   className="judson-regular text-center justify-content-center p-2 "
@@ -98,19 +99,76 @@ function App() {
                   md={8}
                 >
                   {" "}
-                  <p>
-                    Gravida phasellus vulputate lobortis efficitur tempus lectus
-                    potenti. Vestibulum habitasse purus duis odio at
-                    pellentesque lobortis. Ac tempor mattis consequat; cras
-                    ultrices odio. Laoreet dictum facilisis tristique elementum
-                    eros suscipit vivamus. Iaculis nisi elit massa facilisi
-                    pellentesque. Efficitur pulvinar iaculis potenti vivamus;
-                    morbi aliquet massa venenatis. Suscipit facilisis litora,
-                    nisi montes cursus aenean. Semper convallis parturient
-                    lobortis; convallis et aliquet. Elementum parturient blandit
-                    porttitor magnis amet. Torquent pharetra a adipiscing
-                    pharetra bibendum.
-                  </p>
+                  <Container fluid>
+                    <Row>
+                      <Col>
+                        <h3 className="quando-regular text-start">
+                          Jarlene ~{" "}
+                        </h3>
+                        <p>
+                          <strong>Hey!</strong> I’m Jarlene, I’m 17 years old,
+                          and I am a youth organizer as well as a digital
+                          steward here at El Puente. This summer we’ve done a
+                          lot of things for the community and honestly some
+                          things for our own knowledge. We did community
+                          outreaching (interviews), workshops, art projects,
+                          environmental justice tours, protests and more. My
+                          summer at El Puente has been very educational and eye
+                          opening. I’m happy to have been a part of an amazing
+                          team doing amazing things. We’ve been working hard
+                          this summer to raise awareness about the BQE, the
+                          BQGreen project and other environmental things going
+                          on in the neighborhood of Los Sures. I’ve never really
+                          done stuff like this before but I’ve gained a lot of
+                          new skills, knowledge, and traits from this
+                          experience. This website that my team and I created
+                          over the summer showcases a lot of the projects we’ve
+                          been working on at El Puente.
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col>
+                        <h3 className=" quando-regular text-start">McKayla ~</h3>
+                        <p>
+                          <strong>My name is</strong> Mckayla, I’m 18 and this
+                          summer I worked at El Puente as a group youth
+                          organizer where I learned about community issues
+                          within New York City, outreach, art projects,
+                          workshops, side projects and then branched off into
+                          coding. My experience this summer was extremely
+                          interesting, educational, informative where I learned
+                          about lots of information beyond my own community and
+                          learned skills I can use in my everyday life alongside
+                          a supportive community. I will forever be grateful for
+                          this new experience, the people and friends I made
+                          within these weeks when working with the El Puente
+                          community here at Southside Williamsburg.
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col>
+                        <h3 className="quando-regular text-start">Z ~</h3>
+                        <p>
+                          <strong>Yello!</strong> I’m Z, a seventeen year-old,
+                          transfemme college freshman going in for Game Design
+                          and Development, SYEP Youth Organizer and 2-year
+                          Digital Steward. This summer has been quite the doozy;
+                          meeting several people, holding a few workshops and
+                          even making a website whilst working at El Puente once
+                          again. Granted, this is the second one I’ve helped
+                          make for EP but, it was fun nonetheless. Working here
+                          again is something I don’t regret, despite how early
+                          I’ve got to wake up to get here on time. Regardless, I
+                          hope you enjoy the site, we put a lot of effort into
+                          it and we love it, even with all the last minute jank
+                          we had to scrounge through. I can’t think of many
+                          other ways I would have liked to spend my summer.
+                        </p>
+                      </Col>
+                    </Row>
+                  </Container>
                 </Col>
               </Row>
             </Container>

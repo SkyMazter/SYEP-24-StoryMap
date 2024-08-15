@@ -25,7 +25,7 @@ const NavBar = () => {
               color: "white",
             }}
           >
-            SouthSide StoryMap
+            The SouthSide Story
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -51,7 +51,7 @@ const NavBar = () => {
                 Soundscapes
               </Link>
             </Nav.Link>
-            <Nav.Link href="#link">
+            <Nav.Link>
               <Link
                 to={"/muralistas"}
                 style={{
@@ -61,8 +61,17 @@ const NavBar = () => {
                 Muralistas
               </Link>
             </Nav.Link>
-
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <Nav.Link>
+              <Link
+                to={"/videos"}
+                style={{
+                  color: "white",
+                }}
+              >
+                PSA Videos
+              </Link>
+            </Nav.Link>
+            {/* <NavDropdown title="PSA Videos" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -72,7 +81,7 @@ const NavBar = () => {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
