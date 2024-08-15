@@ -47,13 +47,13 @@ const Soundscapes = () => {
         <Row>
           <Col>
             {" "}
-            <p class="text-center">
-              <h1 className="judson-regular">Southside Soundscapes</h1>{" "}
-            </p>
-            <p class="text-center">
-              <h3 className="judson-regular">The Voices of Los Sures</h3>{" "}
-            </p>
-            <p class="text-center" className="judson-regular">
+            <h1 className="text-center judson-regular">
+              Southside Soundscapes
+            </h1>{" "}
+            <h3 className="text-center judson-regular">
+              The Voices of Los Sures
+            </h3>{" "}
+            <p className="text-center judson-regular">
               Southside Soundscapes is a collection of audio recordings,
               recorded by a group of youth organizers at El Puente in the
               Southside of Williamsburg. As youth organizers, a huge part of our
@@ -76,6 +76,7 @@ const Soundscapes = () => {
                     additional content.
                   </Card.Text>
                   <Track
+                    key={interviews[0].id}
                     index={0}
                     src={interviews[0].src}
                     setCurrentSong={setCurrentSong}
@@ -99,6 +100,7 @@ const Soundscapes = () => {
                     additional content.{" "}
                   </Card.Text>
                   <Track
+                    key={interviews[1].id}
                     index={1}
                     src={interviews[1].src}
                     setCurrentSong={setCurrentSong}
@@ -122,6 +124,7 @@ const Soundscapes = () => {
                     additional content.
                   </Card.Text>
                   <Track
+                    key={interviews[2].id}
                     index={2}
                     src={interviews[2].src}
                     setCurrentSong={setCurrentSong}
@@ -167,9 +170,6 @@ const Soundscapes = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <p class="text-center">
-        <h5 className="judson-regular"></h5>{" "}
-      </p>
 
       <Container className="p-3">
         <Row>
@@ -184,7 +184,7 @@ const Soundscapes = () => {
                     This card has supporting text below as a natural lead-in to
                     additional content.
                   </Card.Text>
-                  <Button class="text-center" variant="primary">
+                  <Button className="text-center" variant="primary">
                     Play
                   </Button>
                 </Card.Body>
@@ -202,7 +202,7 @@ const Soundscapes = () => {
                     This card has supporting text below as a natural lead-in to
                     additional content.{" "}
                   </Card.Text>
-                  <Button class="text-center" variant="primary">
+                  <Button className="text-center" variant="primary">
                     Play
                   </Button>
                 </Card.Body>
