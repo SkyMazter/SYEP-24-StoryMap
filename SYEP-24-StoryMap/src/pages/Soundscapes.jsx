@@ -14,9 +14,9 @@ import Miguel from "../assets/Miguel Hernandez and Gabriele Blazyte_3.jpeg";
 import Joseph from "../assets/Joseph Matonis and Branden Henderson_1.jpg";
 import Frances from "../assets/Copy of Frances_Britney_4.jpg";
 
-import FrancesAudio from "../assets/audioFiles/Frances Lucerna_ Britney Urbina_Mixed.wav";
-import JosephAudio from "../assets/audioFiles/Joseph Matonis and Branden Henderson_Mixed.wav";
-import MiguelAudio from "../assets/audioFiles/Miguel Hernandez and Gabriele Blazyte_Mixed.wav";
+//import FrancesAudio from "../assets/audioFiles/Frances Lucerna_ Britney Urbina_Mixed.wav";
+//import JosephAudio from "../assets/audioFiles/Joseph Matonis and Branden Henderson_Mixed.wav";
+//import MiguelAudio from "../assets/audioFiles/Miguel Hernandez and Gabriele Blazyte_Mixed.wav";
 
 import Track from "../components/Track.jsx";
 import { useState } from "react";

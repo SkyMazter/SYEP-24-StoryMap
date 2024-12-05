@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <Navbar
       style={{
-        backgroundColor: "#083B61",
+        backgroundColor: "#CF5B29",
         color: "white",
       }}
     >

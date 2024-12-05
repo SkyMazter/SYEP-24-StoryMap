@@ -9,11 +9,8 @@ import art from "./assets/art.png";
 import water from "./assets/water.png";
 import microphone from "./assets/microphone.png";
 import circleart from "./assets/circleart.png";
-
 import Title from "./assets/TITLE.png";
-
 import Group from "./assets/groupPic.png";
-
 import Footer from "./components/Footer.jsx";
 import NavBar from "./components/NavBar.jsx";
 
@@ -22,9 +19,6 @@ function App() {
     <div>
       <Container fluid style={{ backgroundColor: "#265F7E" }}>
         <Row>
-          {/* <Col md={2} className="p-0">
-            <Image fluid src={bridge} className="w-100 h-100"></Image>
-          </Col> */}
           <Col xs={12} className="p-0">
             <Container fluid style={{ backgroundColor: "#265F7E" }}>
               {" "}
@@ -69,18 +63,6 @@ function App() {
                   </p>
                 </Col>
               </Row>
-              {/* <Row>
-                <Col className="d-flex align-items-center justify-content-center">
-                  {" "}
-                  <Image fluid src={art} className="w-100 h-100"></Image>
-                </Col>
-                <Col className="d-flex align-items-center justify-content-center">
-                  <Image fluid src={microphone}></Image>
-                </Col>
-                <Col className="d-flex align-items-center justify-content-center">
-                  <Image fluid src={water} className="w-100 h-100"></Image>
-                </Col>
-              </Row> */}
               <Row
                 className="quando-regular text-center"
                 style={{ color: "white" }}
@@ -129,7 +111,9 @@ function App() {
                     </Row>
                     <Row>
                       <Col>
-                        <h3 className=" quando-regular text-start">McKayla ~</h3>
+                        <h3 className=" quando-regular text-start">
+                          McKayla ~
+                        </h3>
                         <p>
                           <strong>My name is</strong> Mckayla, I’m 18 and this
                           summer I worked at El Puente as a group youth
