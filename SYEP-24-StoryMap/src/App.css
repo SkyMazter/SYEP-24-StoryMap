@@ -4,56 +4,59 @@
   font-style: normal;
 }
 .judson-regular {
-    font-family: "Judson", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .judson-bold {
-    font-family: "Judson", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .judson-regular-italic {
-    font-family: "Judson", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .carousellImage{
-    width: 100vw;
-    height: 70vh;
-  }
+  font-family: "Judson", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.judson-bold {
+  font-family: "Judson", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.judson-regular-italic {
+  font-family: "Judson", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.carousellImage {
+  width: 100vw;
+  height: 70vh;
+}
 
 #airscale {
-height: 350px;
-width: 600px;
+  height: 350px;
+  width: 600px;
 }
 
 #bqe {
-height: 210px;
-width: 450px;
+  height: 210px;
+  width: 450px;
 }
 
 #map {
-  height: 37vh ;
-  width: 40vw ;
+  height: 37vh;
+  width: 40vw;
 }
 
 .placeholder {
-  width:100%;
+  width: 100%;
 }
-.placeholder2{
+.placeholder2 {
   width: 50%;
 }
 
-.muralistaimage{
+.muralistaimage {
   width: 100%;
-
 }
 
-.yandd{
+.yandd {
   width: 100%;
   height: 90vh;
+}
+
+.float2 {
+  float: left;
 }

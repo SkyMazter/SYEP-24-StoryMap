@@ -105,7 +105,7 @@ function App() {
                         <h3 className="quando-regular text-start">
                           Jarlene ~{" "}
                         </h3>
-                        <p>
+                        <p class="float2 text-start">
                           <strong>Hey!</strong> I’m Jarlene, I’m 17 years old,
                           and I am a youth organizer as well as a digital
                           steward here at El Puente. This summer we’ve done a
@@ -129,8 +129,8 @@ function App() {
                     </Row>
                     <Row>
                       <Col>
-                        <h3 className=" quando-regular text-start">McKayla ~</h3>
-                        <p>
+                        <h3 className="quando-regular text-start">McKayla ~</h3>
+                        <p class="float2 text-start">
                           <strong>My name is</strong> Mckayla, I’m 18 and this
                           summer I worked at El Puente as a group youth
                           organizer where I learned about community issues
@@ -150,7 +150,7 @@ function App() {
                     <Row>
                       <Col>
                         <h3 className="quando-regular text-start">Z ~</h3>
-                        <p>
+                        <p class="float2 text-start">
                           <strong>Yello!</strong> I’m Z, a seventeen year-old,
                           transfemme college freshman going in for Game Design
                           and Development, SYEP Youth Organizer and 2-year
